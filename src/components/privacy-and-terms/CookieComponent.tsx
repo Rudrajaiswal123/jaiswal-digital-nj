@@ -6,7 +6,7 @@ import "./privacyComponent.scss";
 
 export default function CookieComponent() {
   return (
-    <div className="container">
+    <div className="container privacy-policy-page">
       <div className="row">
         <div className="col-12">
           <h1 className="text-light mb-3 text-center">Cookies Policy</h1>

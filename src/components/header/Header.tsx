@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from "next/navigation";
@@ -9,6 +9,7 @@ import './header.scss';
 export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const isActive = (path: string) => pathname === path;
 
@@ -16,8 +17,26 @@ export default function Header() {
     setMenuOpen(false);
   };
 
+  // Handle scroll event for sticky header
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    // Cleanup
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? 'sticky' : ''}`}>
       <nav className="navbar navbar-expand-lg py-0">
         <div className="container">
 
@@ -28,7 +47,7 @@ export default function Header() {
               alt="Jaiswal Digital Logo"
               width={150}
               height={50}
-              className="logo"
+              className="logo rounded-1"
             />
           </Link>
 
@@ -99,7 +118,7 @@ export default function Header() {
 
             </ul>
 
-            <div className="mobile-btn text-md-center">
+            {/* <div className="mobile-btn text-md-center">
               <a
                 href="https://calendly.com/jaiswaldigital15/15min"
                 target="_blank"
@@ -108,7 +127,7 @@ export default function Header() {
               >
                 Book Free Consultation
               </a>
-            </div>
+            </div> */}
           </div>
 
         </div>

@@ -6,7 +6,7 @@ import "./privacyComponent.scss";
 export default function PrivacyComponent() {
   return (
     <>
-      <div className="container">
+      <div className="container privacy-policy-page">
         <div className="row">
           <div className="col-12">
             <h1 className="text-light text-center mb-4">Privacy Policy</h1>

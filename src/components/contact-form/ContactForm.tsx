@@ -115,6 +115,7 @@ export default function ContactForm({
               value={formData.name}
               onChange={handleChange}
               required 
+              suppressHydrationWarning
             />
           </div>
 
@@ -130,6 +131,7 @@ export default function ContactForm({
                 name="company"
                 value={formData.company}
                 onChange={handleChange}
+                suppressHydrationWarning
               />
             </div>
           )}
@@ -146,6 +148,7 @@ export default function ContactForm({
               value={formData.mobile}
               onChange={handleChange}
               required 
+              suppressHydrationWarning
             />
           </div>
 
@@ -161,6 +164,7 @@ export default function ContactForm({
               value={formData.email}
               onChange={handleChange}
               required 
+              suppressHydrationWarning
             />
           </div>
 
@@ -176,6 +180,7 @@ export default function ContactForm({
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
+                suppressHydrationWarning
               />
             </div>
           )}
@@ -192,6 +197,7 @@ export default function ContactForm({
               value={formData.message}
               onChange={handleChange}
               required
+              suppressHydrationWarning
             ></textarea>
           </div>
 

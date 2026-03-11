@@ -34,33 +34,6 @@ export default function HomeComponent() {
           </div>
         </div>
       </section>
-
-      {/* Poster Section */}
-      <section className="poster-section">
-        <div className="container">
-          <div className="poster-row">
-            <div className="poster-box left">
-              <Image
-                src="/assets/images/e-com-ads.png"
-                alt="Ecommerce Ads"
-                width={600}
-                height={300}
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div className="poster-box right">
-              <Image
-                src="/assets/images/linkedin-banner.png"
-                alt="LinkedIn Marketing"
-                width={600}
-                height={300}
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Trusted Section */}
       <section className="trusted-section">
         <div className="container">

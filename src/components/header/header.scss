@@ -8,6 +8,37 @@
   padding: 12px 0;
   position: relative;
   z-index: 1000;
+  transition: all 0.3s ease;
+
+  /* Sticky Header Styles */
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 5, 32, 0.98);
+    backdrop-filter: blur(12px);
+    padding: 8px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    animation: slideDown 0.3s ease;
+
+    .logo {
+      width: 8rem;
+    }
+  }
+}
+
+/* Sticky Header Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* ==============================

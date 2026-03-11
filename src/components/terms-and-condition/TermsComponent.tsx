@@ -6,7 +6,7 @@ import "./termsComponent.scss";
 export default function TermsComponent() {
   return (
     <>
-      <div className="container">
+      <div className="container terms-page">
         <div className="row">
           <div className="col-12">
             <h1 className="text-light text-center mb-4">Terms and Conditions</h1>

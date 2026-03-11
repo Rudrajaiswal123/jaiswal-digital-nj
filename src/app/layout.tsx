@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     url: "https://jaiswaldigital.com",
     images: [
       {
-        url: "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.png",
+        url: "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.webp",
         width: 1200,
         height: 630,
         alt: "Jaiswal Digital - Digital Marketing Agency in India",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     creator: "@jaiswaldigital", // change if you have twitter handle
     images: [
-      "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.png",
+      "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.webp",
     ],
   },
 
@@ -114,7 +114,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Jaiswal Digital",
               "url": "https://jaiswaldigital.com",
-              "logo": "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.png",
+              "logo": "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.webp",
               "description": "Jaiswal Digital is a professional digital marketing and website development company in India helping businesses grow online with SEO, social media marketing and e-commerce solutions.",
               "sameAs": [
                 "https://www.facebook.com/jaiswaldigital",
@@ -145,7 +145,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Jaiswal Digital",
-              "image": "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.png",
+              "image": "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.webp",
               "url": "https://jaiswaldigital.com",
               "telephone": "+919353042456",
               "priceRange": "$$",

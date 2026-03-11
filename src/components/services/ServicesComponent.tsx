@@ -87,7 +87,7 @@ export default function ServicesComponent() {
             <div className="col-lg-6">
               <div className="service-image-box">
                 <Image 
-                  src="/assets/images/about-pic2.jpg" 
+                  src="/assets/images/about-pic2.webp" 
                   alt="Service Image"
                   width={500}
                   height={400}
@@ -131,7 +131,7 @@ export default function ServicesComponent() {
             <div className="col-lg-6">
               <div className="skills-image">
                 <Image 
-                  src="/assets/images/service-pic1.jpg" 
+                  src="/assets/images/service-pic1.webp" 
                   alt="Team Working"
                   width={600}
                   height={500}

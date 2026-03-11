@@ -43,7 +43,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="navbar-brand d-flex align-items-center">
             <Image
-              src="/assets/images/jaiswal-digital-logo.png"
+              src="/assets/images/jaiswal-digital-logo.webp"
               alt="Jaiswal Digital Logo"
               width={150}
               height={50}

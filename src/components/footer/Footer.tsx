@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="footer-brand">
               <div className="d-flex align-items-center mb-3">
                 <Image
-                  src="/assets/images/jaiswal-digital-logo.png"
+                  src="/assets/images/jaiswal-digital-logo.webp"
                   alt="Jaiswal Digital"
                   width={240}
                   height={80}

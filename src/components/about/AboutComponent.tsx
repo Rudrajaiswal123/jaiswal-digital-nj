@@ -30,7 +30,7 @@ export default function AboutComponent() {
             <div className="col-lg-6">
               <div className="about-image-wrapper">
                 <Image 
-                  src="/assets/images/about-pic1.jpg" 
+                  src="/assets/images/about-pic1.webp" 
                   alt="About Us" 
                   className="about-image"
                   width={500}

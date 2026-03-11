@@ -7,7 +7,7 @@
 /* Hero - uses globals but overrides background */
 .hero-section {
     min-height: 90vh;
-    background: url("../../../public/assets/images/about-banner.png") center / cover no-repeat;
+    background: url("../../../public/assets/images/about-banner.webp") center / cover no-repeat;
 }
 
 /* About Section */
@@ -91,7 +91,7 @@
     .vision-left {
         height: 100%;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
-            url("../../../public/assets/images/about-pic2.jpg") center / cover no-repeat;
+            url("../../../public/assets/images/about-pic2.webp") center / cover no-repeat;
         border-radius: 18px;
         padding: 45px;
 

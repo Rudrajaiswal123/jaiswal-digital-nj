@@ -38,34 +38,34 @@ export const services = [
 ];
 
 export const trustedLogos = [
-  { src: '/assets/images/rakesh-masala-logo.png', alt: 'ram-rakesh' },
-  { src: '/assets/images/dns-valuation.jpeg', alt: 'dns' },
-  { src: '/assets/images/mukesh-logo.png', alt: 'mukesh' },
-  { src: '/assets/images/salesOn-logo.jpg', alt: 'saleson' },
-  { src: '/assets/images/mobile-factory.png', alt: 'mobile factory' }
+  { src: '/assets/images/rakesh-masala-logo.webp', alt: 'ram-rakesh' },
+  { src: '/assets/images/dns-valuation.webp', alt: 'dns' },
+  { src: '/assets/images/mukesh-logo.webp', alt: 'mukesh' },
+  { src: '/assets/images/salesOn-logo.webp', alt: 'saleson' },
+  { src: '/assets/images/mobile-factory.webp', alt: 'mobile factory' }
 ];
 
 export const testimonials = [
   {
-    image: '/assets/images/mukesh-logo-w.png',
+    image: '/assets/images/mukesh-logo-w.webp',
     name: 'Mukesh Suri',
     company: 'Mukesh Food Products',
     text: 'Maine Jaiswal Digital ki digital marketing services li hain. Unke product video ads creative aur engaging the, jisse brand reach aur customer interest dono improve hua. Social media marketing ke liye ek reliable aur professional team hai.'
   },
   {
-    image: '/assets/images/dns-valuation.jpeg',
+    image: '/assets/images/dns-valuation.webp',
     name: 'Ujjwal Kumar',
     company: 'DNS Valuation',
     text: 'Jaiswal Digital ne humare business ke liye ek custom application develop kiya, jisse property details form fill karna pe PDF file download ho jata hai. Ab paper par details likhne ki koi zarurat nahi padti—sab kuch digital ho gaya hai. Is solution ne humara kaam fast, organized aur efficient bana diya.'
   },
   {
-    image: '/assets/images/male-team2.png',
+    image: '/assets/images/male-team2.webp',
     name: 'Abhishek vaish',
     company: 'Gift Corner Owner',
     text: 'Mera offline shop mein sales kaafi kam ho gayi thi aur mujhe online business ka experience nahi tha. Jaiswal Digital ke support se mera Meesho aur Amazon account setup hua aur poora e-commerce business manage kiya gaya. Ab main online products sell kar raha hoon aur sales grow ho rahi hain.'
   },
   {
-    image: '/assets/images/rakesh-logo-w.png',
+    image: '/assets/images/rakesh-logo-w.webp',
     name: 'Amit Kesari',
     company: 'Shree Ram Rakesh',
     text: 'Jaiswal Digital ne humare masala products ke liye social media marketing aur product video ads ka excellent kaam kiya. Videos attractive the aur product clearly showcase hua, jisse reach aur engagement dono better mile. Brand promotion ke liye ek trusted aur result-oriented team.'

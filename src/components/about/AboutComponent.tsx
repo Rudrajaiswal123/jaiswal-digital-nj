@@ -72,7 +72,7 @@ export default function AboutComponent() {
                   src={logo.src} 
                   alt={logo.alt}
                   width={120}
-                  height={60}
+                  height={100}
                   style={{ objectFit: 'contain' }}
                 />
               ))}

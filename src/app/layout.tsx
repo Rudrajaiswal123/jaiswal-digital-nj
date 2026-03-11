@@ -89,7 +89,7 @@ export default function RootLayout({
           `}
         </script>
       </head>
-      <body className={openSans.className}>
+      <body>
         <RootTemplate>{children}</RootTemplate>
         <Toaster 
           position="top-center"

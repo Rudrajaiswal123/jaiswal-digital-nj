@@ -6,7 +6,7 @@
 
 /* Hero - uses globals but overrides background */
 .hero-section {
-    min-height: 32rem;
+    min-height: 90vh;
     background: url("../../../public/assets/images/contact-banner2.png") center/cover no-repeat;
 }
 
@@ -150,6 +150,9 @@
     }
     .main-title {
         font-size: 26px;
+    }
+    .contact-section.info-box {
+        grid-template-columns: 1fr !important;
     }
     .info-item {
         align-items: flex-start;

@@ -6,7 +6,7 @@
 
 /* Hero - uses globals but overrides background */
 .hero-section {
-    min-height: 32rem;
+    min-height: 90vh;
     background: url("../../../public/assets/images/about-banner.png") center / cover no-repeat;
 }
 
@@ -58,10 +58,14 @@
         h2 {
             font-size: 36px;
             margin: 15px 0;
+            color: #fff;
         }
 
         p {
             margin-bottom: 30px;
+            color: #cfcbd9;
+            font-size: 15px;
+            line-height: 1.7;
         }
 
         .btn-discover {
@@ -86,8 +90,8 @@
 
     .vision-left {
         height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)), 
-                    url("../../../public/assets/images/about-pic2.jpg") center / cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
+            url("../../../public/assets/images/about-pic2.jpg") center / cover no-repeat;
         border-radius: 18px;
         padding: 45px;
 
@@ -101,10 +105,14 @@
         h2 {
             font-size: 36px;
             margin: 15px 0;
+            color: #fff;
         }
 
         p {
             margin-bottom: 30px;
+            color: #cfcbd9;
+            font-size: 15px;
+            line-height: 1.7;
         }
 
         .btn-learn {
@@ -238,6 +246,7 @@
     .hero-title {
         font-size: 4rem;
     }
+
     .vision-left {
         padding: 15px;
     }
@@ -247,29 +256,35 @@
     .trusted-title {
         font-size: 26px;
     }
+
     .trusted-box {
         padding: 40px 20px;
     }
+
     .hero-title {
         font-size: 3rem;
     }
+
     .team-title {
         font-size: 32px;
     }
+
     .team-subtitle {
         text-align: left;
         margin-top: 10px;
     }
+
     .hero-section {
         min-height: auto;
         padding: 70px 0;
     }
+
     .hero-title {
         font-size: 2.2rem;
     }
+
     .hero-subtitle {
         font-size: 1rem;
         line-height: 1.5;
     }
 }
-

@@ -6,6 +6,7 @@ import Image from "next/image";
 import "./homeComponent.scss";
 import { services, trustedLogos, testimonials, skills } from "./homeData";
 import ContactForm from "../contact-form/ContactForm";
+import FAQ from "../faq/FAQ";
 
 export default function HomeComponent() {
   return (
@@ -112,6 +113,9 @@ export default function HomeComponent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ />
 
       {/* Skills Section with Contact Form */}
       <section className="skills-section">

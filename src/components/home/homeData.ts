@@ -79,3 +79,14 @@ export const skills = [
   { name: 'Video Creation', percentage: '83%', width: '83%' }
 ];
 
+export const faqs = [
+  {
+    question: "What services does Jaiswal Digital provide?",
+    answer: "We provide website development, SEO services, social media marketing, graphic design and e-commerce account management."
+  },
+  {
+    question: "Do you provide digital marketing services across India?",
+    answer: "Yes, we provide digital marketing and website development services across India."
+  }
+];
+

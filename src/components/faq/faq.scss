@@ -1,0 +1,123 @@
+@use "../../styles/variables" as *;
+
+/* ================================
+   FAQ SECTION (Bootstrap Accordion)
+================================ */
+.faq-section {
+    padding: 100px 0;
+    background: radial-gradient(circle at top, #24124d, #0b0616);
+}
+
+.faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Bootstrap Accordion Custom Styles */
+.accordion {
+    .accordion-item {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px !important;
+        margin-bottom: 16px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-color: rgba(181, 124, 255, 0.4);
+        }
+
+        &:first-child {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            margin-bottom: 0;
+        }
+    }
+
+    .accordion-header {
+        margin: 0;
+    }
+
+    .accordion-button {
+        background: transparent;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 24px;
+        border: none;
+        box-shadow: none;
+        
+        &:focus {
+            box-shadow: none;
+        }
+
+        &::after {
+            filter: brightness(0) invert(1);
+        }
+
+        &:not(.collapsed) {
+            background: rgba(181, 124, 255, 0.1);
+            color: #ff7acb;
+            box-shadow: none;
+
+            &::after {
+                filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(290deg);
+            }
+        }
+    }
+
+    .accordion-collapse {
+        border: none;
+    }
+
+    .accordion-body {
+        background: transparent;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 20px 24px;
+
+        p {
+            color: #cfcbd9;
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0;
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 70px 0;
+    }
+
+    .accordion {
+        .accordion-button {
+            padding: 16px 20px;
+            font-size: 14px;
+        }
+
+        .accordion-body {
+            padding: 16px 20px;
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 50px 0;
+    }
+
+    .faq-wrapper {
+        padding: 0 10px;
+    }
+}
+

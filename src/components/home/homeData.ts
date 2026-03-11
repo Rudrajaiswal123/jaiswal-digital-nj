@@ -6,6 +6,11 @@ export const services = [
     description: 'We build fast, SEO-optimized websites using Next.js and WordPress, focused on performance, scalability, and converting visitors into customers.'
   },
   {
+    icon: 'bi bi-search',
+    title: 'Search Engine Optimization',
+    description: 'We provide result-driven SEO services to improve your website’s visibility on Google and other search engines. Our strategy includes keyword research, on-page optimization, technical SEO, and high-quality link building to increase organic traffic, improve rankings, and generate qualified leads for long-term business growth.'
+  },
+  {
     icon: 'bi bi-phone',
     title: 'E-commerce Account Management',
     description: 'Move your business online with confidence. We manage your Amazon, Flipkart, and Meesho accounts end-to-end—handling operations, optimizing product listings, and building long-term online growth.'
@@ -25,11 +30,11 @@ export const services = [
     title: 'Video Creation',
     description: 'We create scroll-stopping videos and promote them with performance-driven strategies to increase reach, engagement, and conversions across social and eCommerce platforms.'
   },
-  {
-    icon: 'bi bi-bullseye',
-    title: 'Social Media Marketing',
-    description: 'We create performance-driven social media campaigns that increase brand awareness, engagement, and conversions across platforms using data, creativity, and audience insights.'
-  }
+  // {
+  //   icon: 'bi bi-bullseye',
+  //   title: 'Social Media Marketing',
+  //   description: 'We create performance-driven social media campaigns that increase brand awareness, engagement, and conversions across platforms using data, creativity, and audience insights.'
+  // }
 ];
 
 export const trustedLogos = [

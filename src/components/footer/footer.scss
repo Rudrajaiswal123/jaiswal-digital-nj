@@ -1,0 +1,145 @@
+@use "../../styles/variables" as *;
+
+/* ================================
+   FOOTER
+================================ */
+.footer {
+  background: radial-gradient(circle at top, #2b145f, #05010f);
+  padding: 70px 0 0;
+  color: #b8b4d8;
+
+  /* Logo */
+  .footer-logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  /* Description text */
+  .footer-text {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-family: $font-secondary;
+  }
+
+  /* Section Titles */
+  .footer-title {
+    color: $text-light;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  /* Links */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 12px;
+
+      a {
+        color: #b8b4d8;
+        text-decoration: none;
+        transition: $transition;
+
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+  }
+
+  /* Social Icons */
+  .footer-social {
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #000;
+      margin-right: 10px;
+      font-size: 18px;
+      transition: $transition;
+
+      &:hover {
+        background: $primary-gradient;
+        color: #fff;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  /* Bottom Bar */
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+    p {
+      margin: 0;
+      font-family: $font-secondary;
+    }
+
+    .footer-policy {
+      a {
+        color: #b8b4d8;
+        margin-left: 20px;
+        text-decoration: none;
+        transition: $transition;
+
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+  }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+  .footer {
+    .footer-logo {
+      width: 12rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+
+      .footer-policy {
+        a {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    .footer-logo {
+      width: 10rem;
+    }
+
+    .footer-text {
+      font-size: 14px;
+    }
+  }
+}

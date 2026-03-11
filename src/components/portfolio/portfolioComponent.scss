@@ -1,0 +1,115 @@
+@use "../../styles/variables" as *;
+
+/* ================================
+   PORTFOLIO PAGE SPECIFIC STYLES
+================================ */
+
+.hero-section {
+    min-height: 28rem;
+    background: url("../../../public/assets/images/portfolio-banner.png") center/cover no-repeat;
+    position: relative;
+}
+
+.portfolio {
+    padding: 100px 0;
+    background: radial-gradient(circle at top, #24124d, #0b0616);
+
+    .portfolio-card {
+        height: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        cursor: pointer;
+        transition: all 0.35s ease;
+
+        &:hover {
+            border-color: #b57cff;
+
+            /* Video wrapper */
+            .portfolio-media video {
+                play-state: running;
+            }
+        }
+
+        /* Video wrapper */
+        .portfolio-media {
+            position: relative;
+            height: 30rem;
+            overflow: hidden;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        /* Content */
+        .portfolio-content {
+            padding: 18px 16px;
+            text-align: center;
+
+            h5 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 6px;
+                color: #ffffff;
+            }
+
+            span {
+                font-size: 13px;
+                color: #ff7acb;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .portfolio {
+        .portfolio-card {
+            .portfolio-media {
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .portfolio {
+        .portfolio-card {
+            .portfolio-media {
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio {
+        padding: 70px 0;
+
+        .portfolio-card {
+            .portfolio-media {
+                height: 180px;
+            }
+        }
+    }
+}
+

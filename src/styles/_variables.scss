@@ -1,0 +1,32 @@
+/* ================================
+   COLORS
+================================ */
+$bg-dark: #0f0520;
+$bg-radial: radial-gradient(circle at top, #2b145f, #05010f);
+
+$text-light: #ffffff;
+$text-muted: #cfcbd9;
+
+$pink: #ff7ac6;
+$purple: #b57cff;
+
+$primary-gradient: linear-gradient(90deg, #9b5cff, #ff7acb);
+$secondary-gradient: linear-gradient(135deg, #b57cff, #ff7ac6);
+
+/* ================================
+   FONT
+================================ */
+$font-primary: var(--font-poppins), sans-serif;
+$font-secondary: var(--font-open-sans), sans-serif;
+
+/* ================================
+   BORDER RADIUS
+================================ */
+$radius-sm: 8px;
+$radius-md: 16px;
+$radius-lg: 30px;
+
+/* ================================
+   TRANSITIONS
+================================ */
+$transition: all 0.3s ease;

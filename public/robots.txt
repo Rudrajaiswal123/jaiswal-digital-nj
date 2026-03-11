@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /privacy-policy/
+Disallow: /terms-and-conditions/
+Disallow: /cookie-policy/
+
+Sitemap: https://jaiswaldigital.com/sitemap.xml
+

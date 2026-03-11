@@ -1,0 +1,36 @@
+.trusted-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+
+  .trusted-box {
+    text-align: center;
+  }
+
+  .trusted-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  .trusted-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    img {
+      max-width: 120px;
+      height: auto;
+      filter: grayscale(100%);
+      transition: all 0.3s ease;
+
+      &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+

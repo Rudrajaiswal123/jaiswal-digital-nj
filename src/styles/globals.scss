@@ -1,0 +1,816 @@
+
+@use "variables";
+// Bootstrap css
+@import 'bootstrap/dist/css/bootstrap.css';
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+// Slick carousel 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: variables.$font-primary;
+  background-color: variables.$bg-dark;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p {
+  font-family: variables.$font-secondary;
+  font-weight: 400;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.min-vh-40 {
+    min-height: 40vh;
+}
+
+/* Gradient Buttons */
+.gradient-btn,
+.btn-gradient {
+  padding: 10px 24px;
+  border-radius: variables.$radius-lg;
+  font-weight: 600;
+  color: #fff;
+  background: variables.$primary-gradient;
+  border: none;
+  transition: variables.$transition;
+
+  &:hover {
+    background: linear-gradient(90deg, #ff7acb, #9b5cff);
+    opacity: 0.9;
+    color: #fff;
+  }
+}
+
+/* Service Button */
+.btn-service {
+  padding: 10px 26px;
+  border-radius: 25px;
+  background: variables.$secondary-gradient;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #20b955;
+}
+
+.header {
+    background: radial-gradient(circle at top, #2b145f, #05010f);
+    padding: 12px 0;
+}
+
+/* LOGO */
+.logo {
+    width: 10rem;
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* NAV LINKS */
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #ff7acb;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #9b5cff, #ff7acb);
+}
+
+/* DROPDOWN */
+.custom-dropdown {
+    background: #2a243d;
+    border-radius: 12px;
+    padding: 10px;
+    border: none;
+}
+
+.custom-dropdown .dropdown-item {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background: #3d345c;
+    color: #ff7acb;
+}
+
+/* BUTTON */
+.gradient-btn {
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #9b5cff, #ff7acb);
+    border: none;
+}
+
+.gradient-btn:hover {
+    background: linear-gradient(90deg, #ff7acb, #9b5cff);
+    opacity: 0.9;
+    color: #fff;
+}
+
+.section-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #ff7ac6;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* MOBILE FIX */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-section {
+    min-height: 30rem;
+    background: url("../../public/assets/images/home-banner.png") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-badge {
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: 1px solid #ff7adf;
+    color: #ff7adf;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 5, 25, 0.5);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.hero-subtitle {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* ================================
+   TRUSTED / BRANDS SECTION
+================================ */
+.trusted-section {
+    padding: 80px 0;
+    background: radial-gradient(circle at center, #2a145f, #0b0616);
+}
+
+.trusted-box {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.02));
+    border-radius: 16px;
+    padding: 60px 40px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.trusted-title {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.trusted-title span {
+    color: #ff7ac6;
+}
+
+.trusted-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.trusted-logos img {
+    max-width: 120px;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+.trusted-logos img:hover {
+    transform: scale(1.05);
+}
+
+.services-cards-section {
+    padding: 100px 0;
+    background: radial-gradient(circle at top, #24124d, #0b0616);
+}
+
+.service-card {
+    height: 100%;
+    padding: 40px 35px;
+    border-radius: 18px;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    transition: all 0.35s ease;
+}
+
+/* Hover & Active State */
+.service-card:hover,
+.service-card.active {
+    border-color: #b57cff;
+    /* one border only */
+    box-shadow: 0 2px 20px rgba(181, 124, 255, 0.35);
+    /* glow */
+    transform: translateY(-10px);
+}
+
+/* ======================================
+   ICON
+====================================== */
+.service-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service-icon i {
+    font-size: 22px;
+    color: #ff7ac6;
+    transition: color 0.3s ease;
+}
+
+/* Icon color change on hover */
+.service-card:hover .service-icon i {
+    color: #b57cff;
+}
+
+/* ======================================
+   CARD CONTENT
+====================================== */
+.service-card h4 {
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.service-card p {
+    margin-bottom: 30px;
+    color: #cfcbd9;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ======================================
+   BUTTON
+====================================== */
+.btn-service {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #b57cff, #ff7ac6);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-service:hover {
+    transform: translateY(-2px);
+}
+
+.testimonial-section {
+    padding: 100px 0;
+    background: radial-gradient(circle at top, #24124d, #0b0616);
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    padding: 40px 30px;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.testimonial-card:hover {
+    border-color: #b57cff;
+}
+
+/* Avatar */
+.testimonial-card .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #b57cff;
+}
+
+/* Text */
+.testimonial-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #cfcbd9;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h5 {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testimonial-card span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ff7ac6;
+}
+
+.poster-section {
+    padding: 80px 0;
+    background: radial-gradient(circle at top, #24124d, #0b0616);
+}
+
+/* Layout */
+.poster-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+/* Image Boxes */
+.poster-box {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.poster-box:hover {
+    transform: translateY(-6px);
+}
+
+/* Images */
+.poster-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.skills-section {
+    background: radial-gradient(circle at top left, #24124d, #0b0616);
+}
+
+/* Left Content */
+.skills-content {
+    padding: 90px 80px;
+    height: 100%;
+    color: #ffffff;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px),
+        linear-gradient(90deg,
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px);
+    background-size: 60px 60px;
+}
+
+.skills-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 15px 0 20px;
+}
+
+.skills-desc {
+    color: #cfcbd9;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* Skill Item */
+.skill-item {
+    margin-bottom: 28px;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Progress Bar */
+.progress {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(135deg, #b57cff, #ff7ac6);
+    border-radius: 10px;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.contact-form .form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: #fff;
+}
+
+.contact-form .form-control::placeholder {
+    color: #aaa;
+}
+
+/* FOOTER */
+.footer {
+    background: radial-gradient(circle at top, #2b145f, #05010f);
+    padding: 70px 0 0;
+    color: #b8b4d8;
+}
+
+.footer-logo {
+    width: 15rem;
+    height: auto;
+}
+
+.footer-text {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* TITLES */
+.footer-title {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* LINKS */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #b8b4d8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff7acb;
+}
+
+/* SOCIAL ICONS */
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #000;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: linear-gradient(90deg, #9b5cff, #ff7acb);
+    color: #fff;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-policy a {
+    color: #b8b4d8;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.footer-policy a:hover {
+    color: #ff7acb;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN FIXES
+===================================== */
+
+/* ---------- Large tablets & small laptops ---------- */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .trusted-title {
+        font-size: 28px;
+        width: 100% !important;
+    }
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 992px) {
+
+    /* Header */
+    .logo {
+        width: 8rem;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 3.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    /* Section titles */
+    .section-title {
+        font-size: 30px;
+    }
+
+    /* Trusted */
+    .trusted-box {
+        padding: 40px 25px;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 15px;
+    }
+
+    /* How it works */
+    .work-card::after {
+        display: none;
+    }
+
+    .poster-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Skills */
+    .skills-content {
+        padding: 60px 40px;
+    }
+
+    .skills-content h2 {
+        font-size: 32px;
+    }
+
+    /* Footer */
+    .footer-logo {
+        width: 12rem;
+    }
+}
+
+/* ---------- Mobile Devices ---------- */
+@media (max-width: 768px) {
+
+    /* Navbar mobile dropdown */
+    .navbar-collapse {
+        background: #0f0520;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        gap: 12px;
+    }
+
+    /* Hero */
+    .hero-section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Trusted logos */
+    .trusted-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Services */
+    .services-cards-section {
+        padding: 70px 0;
+    }
+
+    /* How it works */
+    .icon-circle {
+        width: 65px;
+        height: 65px;
+    }
+
+    .icon-circle i {
+        font-size: 26px;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+
+    /* Skills + form */
+    .skills-content {
+        padding: 50px 25px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+    }
+
+    /* Footer bottom */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .footer-policy a {
+        margin: 0 10px;
+    }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+
+    /* Hero */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    /* Section titles */
+    .section-title {
+        font-size: 24px;
+    }
+
+    /* Buttons */
+    .gradient-btn,
+    .btn-service,
+    .btn-gradient {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .footer-logo {
+        width: 10rem;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,103 @@
+@use "../../styles/variables" as *;
+
+/* ================================
+   HERO SLIDER STYLES
+================================ */
+
+.heroSection {
+    background: #e5e5e5;
+    position: relative;
+    overflow: hidden;
+
+    /* Slide */
+    .heroSlide {
+        padding: 4rem 6rem;
+    }
+
+    /* Title */
+    .heroTitle {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.15;
+        color: #0b145a;
+        margin-bottom: 24px;
+    }
+
+    /* Description */
+    .heroDesc {
+        font-size: 18px;
+        line-height: 1.7;
+        color: #5b6270;
+        margin-bottom: 36px;
+        max-width: 520px;
+    }
+
+    /* Button */
+    .heroBtn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 32px;
+        background: #16bdc4;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #174fd6;
+            transform: translateY(-2px);
+        }
+    }
+
+    /* Slick dots */
+    .slick-dots {
+        bottom: 25px;
+
+        li {
+            button:before {
+                font-size: 10px;
+                color: #c7d5ff;
+                opacity: 1;
+            }
+
+            &.slick-active button:before {
+                color: #16bdc4;
+            }
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .heroSection {
+        .heroSlide {
+            padding: 90px 0 80px;
+            text-align: center;
+        }
+
+        .heroTitle {
+            font-size: 42px;
+        }
+
+        .heroDesc {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .heroSection {
+        .heroTitle {
+            font-size: 32px;
+        }
+
+        .heroDesc {
+            font-size: 16px;
+        }
+    }
+}
+

@@ -1,0 +1,163 @@
+@use "../../styles/variables" as *;
+
+/* ================================
+   TESTIMONIAL SECTION
+================================ */
+
+.testimonialSection {
+    padding: 2rem 0;
+    background: #f9fbff;
+
+    /* Slick spacing */
+    .slick-slide {
+        padding: 0 16px;
+    }
+
+    /* ================================
+       TESTIMONIAL CARD
+    =============================== */
+    .card {
+        position: relative;
+        background: #ffffff;
+        border: 2px solid #e6ecf5;
+        border-radius: 20px;
+        padding: 42px 36px;
+        min-height: 26rem;
+        text-align: center;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-color: #16bdc4;
+        }
+
+        /* Text */
+        .message {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #4a4a4a;
+            margin-bottom: 32px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #16bdc4;
+            margin-bottom: 6px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .location {
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #7a7a7a;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ================================
+           BACKGROUND / DECORATIVE IMAGES
+        =============================== */
+
+        /* Quote icon */
+        .cardQuote {
+            position: absolute;
+            bottom: 2rem;
+            right: 1rem;
+            width: 100px !important;
+            height: auto !important;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Pattern image */
+        .cardPattern {
+            position: absolute;
+            bottom: 18px;
+            left: 30px;
+            width: 60px !important;
+            height: auto !important;
+            z-index: 1;
+            pointer-events: none;
+        }
+    }
+
+    /* ================================
+       SLICK DOTS
+    =============================== */
+    .slick-dots {
+        bottom: -40px;
+
+        li {
+            button:before {
+                font-size: 10px;
+                color: #c5d4ff;
+                opacity: 1;
+            }
+
+            &.slick-active button:before {
+                color: #16bdc4;
+            }
+        }
+    }
+
+    /* ================================
+       SLICK ARROWS
+    =============================== */
+    .slick-prev,
+    .slick-next {
+        width: 46px;
+        height: 46px;
+        background: #16bdc4 !important;
+        border-radius: 50%;
+        z-index: 10;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #16bdc4 !important;
+        }
+
+        &:before {
+            color: #ffffff;
+            font-size: 18px;
+            opacity: 1;
+        }
+    }
+
+    .slick-prev {
+        left: -55px;
+    }
+
+    .slick-next {
+        right: -55px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .testimonialSection {
+        .slick-prev,
+        .slick-next {
+            display: none !important;
+        }
+
+        .card {
+            padding: 36px 28px;
+            min-height: auto;
+
+            .message {
+                font-size: 16px;
+            }
+
+            .cardQuote,
+            img[alt="pattern-1"] {
+                width: 110px !important;
+            }
+        }
+    }
+}
+

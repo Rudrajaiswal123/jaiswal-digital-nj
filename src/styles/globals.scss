@@ -160,22 +160,6 @@ p {
     color: #ff7acb;
 }
 
-/* BUTTON */
-.gradient-btn {
-    padding: 10px 24px;
-    border-radius: 30px;
-    font-weight: 600;
-    color: #fff;
-    background: linear-gradient(90deg, #9b5cff, #ff7acb);
-    border: none;
-}
-
-.gradient-btn:hover {
-    background: linear-gradient(90deg, #ff7acb, #9b5cff);
-    opacity: 0.9;
-    color: #fff;
-}
-
 .section-tag {
     display: inline-block;
     margin-bottom: 10px;

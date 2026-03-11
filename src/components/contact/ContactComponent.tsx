@@ -24,8 +24,8 @@ export default function ContactComponent() {
       </section>
 
       <section className="contact-section">
-        <div className="container py-5">
-          <div className="row align-items-start g-5">
+        <div className="container py-3 ps-3 py-md-5">
+          <div className="row align-items-start g-0 g-md-5">
             <div className="col-lg-6 text-light">
               <span className="small-title">GET IN TOUCH</span>
               <h2 className="main-title">

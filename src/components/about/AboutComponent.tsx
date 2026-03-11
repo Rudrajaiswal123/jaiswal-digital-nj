@@ -26,7 +26,7 @@ export default function AboutComponent() {
       {/* About Section */}
       <section className="about-section">
         <div className="container">
-          <div className="row align-items-center g-5">
+          <div className="row align-items-center g-0 g-md-5">
             <div className="col-lg-6">
               <div className="about-image-wrapper">
                 <Image 

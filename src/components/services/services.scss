@@ -125,8 +125,8 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        min-height: auto;
-        padding: 70px 0;
+        min-height: 50vh;
+        padding: 25px 0;
     }
 
     .hero-title {
@@ -137,8 +137,24 @@
         font-size: 28px;
     }
 
+    .services-cards-section {
+        padding: 25px 0;
+    }
+
     .service-card {
-        padding: 35px 30px;
+        padding: 20px;
+    }
+
+    .service-hero-section {
+    padding: 20px 0;
+    }
+
+    .service-content{
+    padding: 20px;
+    }
+
+    .skills-content {
+        padding: 20px;
     }
 }
 

@@ -118,10 +118,12 @@
 
 @media (max-width: 768px) {
   .footer {
+    padding: 20px 10px;
     .footer-bottom {
       flex-direction: column;
       text-align: center;
       gap: 12px;
+      margin: 0;
 
       .footer-policy {
         a {

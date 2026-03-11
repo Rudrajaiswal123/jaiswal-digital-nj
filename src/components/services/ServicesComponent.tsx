@@ -30,7 +30,7 @@ export default function ServicesComponent() {
           <div className="text-center mb-5">
             <span className="section-tag">WHAT WE OFFER</span>
             <h2 className="section-title">
-              Digital Solutions Built to Scale Your Business.
+              Digital Solutions Built to Scale Your Business
             </h2>
           </div>
           <div className="row g-4">
@@ -53,7 +53,7 @@ export default function ServicesComponent() {
       {/* Service Hero Section */}
       <section className="service-hero-section">
         <div className="container">
-          <div className="row align-items-center g-5">
+          <div className="row ">
             <div className="col-lg-6">
               <div className="service-content">
                 <h1>

@@ -253,6 +253,9 @@
 }
 
 @media (max-width: 768px) {
+    .trusted-section{
+    padding: 20px 0px; 
+    }
     .trusted-title {
         font-size: 26px;
     }
@@ -264,9 +267,12 @@
     .hero-title {
         font-size: 3rem;
     }
+    .team-section{
+        padding: 20px;
+    }
 
     .team-title {
-        font-size: 32px;
+        font-size: 32px !important;
     }
 
     .team-subtitle {
@@ -275,8 +281,8 @@
     }
 
     .hero-section {
-        min-height: auto;
-        padding: 70px 0;
+        min-height: 50vh;
+        padding: 25px 0;
     }
 
     .hero-title {
@@ -286,5 +292,18 @@
     .hero-subtitle {
         font-size: 1rem;
         line-height: 1.5;
+    }
+
+    .about-section {
+    padding: 20px 0px;
+    }  
+    .vision-mission-section {
+    padding: 20px 0;
+    } 
+    .about-content {
+    padding-top: 20px;
+    }
+    .vision-mission-section .vision-left{
+        padding: 20px;
     }
 }

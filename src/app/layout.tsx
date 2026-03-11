@@ -30,6 +30,21 @@ export const metadata: Metadata = {
   description:
     "Jaiswal Digital is a professional digital marketing and website development company in India helping businesses grow online with SEO, social media marketing and e-commerce solutions.",
 
+  keywords: [
+    "Digital Marketing Agency in India",
+    "Website Development Company in India",
+    "SEO Services for Small Businesses",
+    "Amazon Seller Account Management",
+    "Digital Marketing Company",
+    "SEO Services",
+    "Social Media Marketing",
+    "E-commerce Solutions",
+    "Website Development",
+    "Amazon Seller Services",
+    "Online Marketing Agency",
+    "Best Digital Marketing Company India"
+  ],
+
   applicationName: "Jaiswal Digital",
   authors: [{ name: "Jaiswal Digital" }],
   creator: "Jaiswal Digital",
@@ -192,7 +207,7 @@ export default function RootLayout({
               "itemListElement": [
                 {
                   "@type": "Service",
-                  "name": "Digital Marketing",
+                  "name": "Digital Marketing Agency in India",
                   "description": "Comprehensive digital marketing services including SEO, SEM, social media marketing, and content marketing to grow your business online.",
                   "provider": {
                     "@type": "Organization",
@@ -202,7 +217,7 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Service",
-                  "name": "Website Development",
+                  "name": "Website Development Company in India",
                   "description": "Professional website development services including responsive design, e-commerce solutions, and custom web applications.",
                   "provider": {
                     "@type": "Organization",
@@ -212,8 +227,18 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Service",
-                  "name": "SEO Services",
-                  "description": "Search engine optimization services to improve your website ranking and drive organic traffic.",
+                  "name": "SEO Services for Small Businesses",
+                  "description": "Search engine optimization services to improve your website ranking and drive organic traffic for small businesses.",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Jaiswal Digital",
+                    "url": "https://jaiswaldigital.com"
+                  }
+                },
+                {
+                  "@type": "Service",
+                  "name": "Amazon Seller Account Management",
+                  "description": "Expert Amazon seller account management services including product listing, optimization, inventory management, and advertising campaigns.",
                   "provider": {
                     "@type": "Organization",
                     "name": "Jaiswal Digital",

@@ -282,7 +282,7 @@ export default function RootLayout({
                   "name": "What services does Jaiswal Digital provide?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Jaiswal Digital provides comprehensive digital marketing services including SEO, social media marketing, website development, e-commerce solutions, Google Ads management, and content marketing. We help businesses grow their online presence and generate more leads."
+                    "text": "Jaiswal Digital is a leading digital marketing agency in India providing comprehensive online marketing solutions including website development using Next.js and WordPress, search engine optimization (SEO) services, social media marketing, e-commerce account management for Amazon, Flipkart and Meesho, graphic designing, and video creation services. We help businesses grow their online presence and generate more leads."
                   }
                 },
                 {
@@ -290,7 +290,31 @@ export default function RootLayout({
                   "name": "Do you provide digital marketing services across India?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we provide digital marketing services across India. Our team works with clients pan-India and delivers results-driven solutions remotely. We have experience serving businesses in Delhi NCR, Mumbai, Bangalore, Chennai, Kolkata, and all major cities."
+                    "text": "Yes, we provide digital marketing services across India. Our team works with clients pan-India and delivers result-driven solutions remotely. We have experience serving businesses in Delhi NCR, Mumbai, Bangalore, Chennai, Kolkata, Hyderabad, Pune, and all major Indian cities. Our digital marketing company helps small and medium businesses grow their online presence."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why choose Jaiswal Digital as your SEO company in India?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Jaiswal Digital is a trusted SEO company in India offering result-driven SEO services for small businesses. Our SEO experts use white-hat techniques including keyword research, on-page optimization, technical SEO, and quality link building to improve your website's Google rankings. We focus on driving organic traffic and generating qualified leads that convert into customers. Our SEO packages are affordable and tailored to meet your business goals."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you offer Amazon seller account management services?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we provide complete Amazon seller account management services in India. Our e-commerce experts handle everything from account setup, product listing optimization, inventory management, Amazon advertising campaigns (PPC), and sales analytics. We help sellers increase their product visibility, improve rankings on Amazon search results, and boost sales. Our Amazon account management services are available for sellers across India looking to grow their online business."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How much does website development cost in India?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The cost of website development in India varies based on your requirements. Jaiswal Digital offers affordable website development services starting from ₹15,000 for basic business websites. Our website development company provides custom Next.js websites, WordPress websites, e-commerce stores, and web applications. We deliver SEO-friendly, mobile-responsive websites with fast loading speeds. Contact us for a free quote based on your specific website needs."
                   }
                 }
               ]

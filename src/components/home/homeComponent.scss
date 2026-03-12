@@ -3,3 +3,9 @@
 /* Home Component - Page-specific styles only */
 /* Most styles are inherited from globals.scss */
 
+.home-logo-img {
+  object-fit: contain;
+}
+
+/* Progress bars use Bootstrap */
+

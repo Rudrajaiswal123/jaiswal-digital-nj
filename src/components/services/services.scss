@@ -123,6 +123,13 @@
     }
 }
 
+.service-image-full {
+  width: 100%;
+  height: auto;
+}
+
+/* Progress bars use Bootstrap */
+
 @media (max-width: 768px) {
     .hero-section {
         min-height: 50vh;

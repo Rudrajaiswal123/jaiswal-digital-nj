@@ -69,12 +69,12 @@ export default function Footer() {
           <div className="col-lg-3 col-md-6">
             <h5 className="footer-title">Our Services</h5>
             <ul className="footer-links">
-              <li><Link href="/services">Website Development</Link></li>
-              <li><Link href="/services">Search Engine Optimization</Link></li>
-              <li><Link href="/services">E-commerce Account Management</Link></li>
-              <li><Link href="/services">Digital Marketing</Link></li>
-              <li><Link href="/services">Graphic Designing</Link></li>
-              <li><Link href="/services">Video Creation</Link></li>
+              <li><Link href="#">Website Development</Link></li>
+              <li><Link href="#">Search Engine Optimization</Link></li>
+              <li><Link href="#">E-commerce Account Management</Link></li>
+              <li><Link href="#">Digital Marketing</Link></li>
+              <li><Link href="#">Graphic Designing</Link></li>
+              <li><Link href="#">Video Creation</Link></li>
               {/* <li><Link href="/services">Social Media Marketing</Link></li> */}
             </ul>
           </div>

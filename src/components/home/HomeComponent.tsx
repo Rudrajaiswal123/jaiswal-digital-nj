@@ -50,7 +50,7 @@ export default function HomeComponent() {
                   alt={logo.alt}
                   width={120}
                   height={100}
-                  style={{ objectFit: "contain" }}
+                  className="home-logo-img"
                 />
               ))}
             </div>
@@ -137,7 +137,7 @@ export default function HomeComponent() {
                       <span>{skill.percentage}</span>
                     </div>
                     <div className="progress">
-                      <div
+                      <div 
                         className="progress-bar"
                         style={{ width: skill.width }}
                       ></div>
@@ -146,7 +146,7 @@ export default function HomeComponent() {
                 ))}
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 mt-lg-4">
               <ContactForm
                 title="Send us a message"
                 subtitle="Please feel free to send us any questions."

@@ -42,7 +42,7 @@ export default function ContactComponent() {
                     </div>
                     <div>
                       <h6>{info.title}</h6>
-                      <p style={{ whiteSpace: 'pre-line' }}>{info.content}</p>
+                      <p className="info-content">{info.content}</p>
                     </div>
                   </div>
                 ))}
@@ -87,7 +87,7 @@ export default function ContactComponent() {
                 allowFullScreen
                 loading="lazy"
                 height="300"
-                style={{ width: '100%', border: 0 }}
+                width="100%"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Jaiswal Digital Location"
               ></iframe>

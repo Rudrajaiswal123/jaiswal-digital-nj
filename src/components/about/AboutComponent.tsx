@@ -32,10 +32,9 @@ export default function AboutComponent() {
                 <Image 
                   src="/assets/images/about-pic1.webp" 
                   alt="About Us" 
-                  className="about-image"
+                  className="about-image about-img-full"
                   width={500}
                   height={600}
-                  style={{ width: '100%', height: 'auto' }}
                 />
                 <div className="premium-badge">
                   <span>Premium<br/>Services</span>
@@ -73,7 +72,7 @@ export default function AboutComponent() {
                   alt={logo.alt}
                   width={120}
                   height={100}
-                  style={{ objectFit: 'contain' }}
+                  className="logo-img"
                 />
               ))}
             </div>
@@ -148,8 +147,8 @@ export default function AboutComponent() {
                     src={member.image} 
                     alt={member.name}
                     width={300}
-                    height={350}
-                    style={{ width: '100%', height: 'auto' }}
+                  height={350}
+                  className="team-img-full"
                   />
                   <h4>{member.name}</h4>
                   <span>{member.role}</span>

@@ -207,8 +207,7 @@ export default function ContactForm({
               className="btn-gradient w-100" 
               type="submit"
               disabled={loading}
-            >
-              <i className="bi bi-envelope"></i> 
+            > 
               {loading ? 'SENDING...' : buttonText}
             </button>
           </div>

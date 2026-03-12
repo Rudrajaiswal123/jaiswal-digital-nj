@@ -10,6 +10,10 @@
     background: url("../../../public/assets/images/about-banner.webp") center / cover no-repeat;
 }
 
+.logo-img {
+  object-fit: contain;
+}
+
 /* About Section */
 .about-section {
     padding: 80px 0;
@@ -212,9 +216,16 @@
 
         img {
             width: 100%;
+            height: auto;
             border-radius: 14px;
             margin-bottom: 20px;
             transition: all 0.35s ease;
+        }
+
+        .about-img-full,
+        .team-img-full {
+          width: 100%;
+          height: auto;
         }
 
         h4 {

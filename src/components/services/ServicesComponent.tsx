@@ -91,7 +91,7 @@ export default function ServicesComponent() {
                   alt="Service Image"
                   width={500}
                   height={400}
-                  style={{ width: '100%', height: 'auto' }}
+                  className="service-image-full"
                 />
                 <div className="image-arrow">
                   <i className="bi bi-arrow-up-right"></i>

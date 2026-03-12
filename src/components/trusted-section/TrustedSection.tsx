@@ -29,7 +29,7 @@ export default function TrustedSection({ logos }: TrustedSectionProps) {
                 alt={logo.alt}
                 width={120}
                 height={60}
-                style={{ objectFit: 'contain' }}
+                className="logo-img"
               />
             ))}
           </div>

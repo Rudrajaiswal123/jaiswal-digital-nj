@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Our Digital Marketing Services in India | Jaiswal Digital",
     description:
-      "Professional SEO, website development, performance marketing and e-commerce management services to grow your business online across India.",
+      "Explore our Digital Marketing services including Website Development, SEO Services, Social Media Marketing and E-commerce Management.",
     url: "https://jaiswaldigital.com/services",
   },
 

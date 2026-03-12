@@ -51,7 +51,7 @@ export default function AboutComponent() {
                 <p className="pe-lg-5">
                   Jaiswal Digital is a results-driven digital agency focused on helping businesses grow online. We specialize in digital marketing, e-commerce account management, and performance-led solutions that turn ideas into measurable results. From helping offline sellers go online to scaling established brands, we combine strategy, creativity, and data to build sustainable digital growth. Our goal is simple—deliver solutions that increase visibility, engagement, and conversions while creating long-term value for our clients.
                 </p>
-                <Link href="/contact" className="btn-discover">Discover More</Link>
+                <Link href="#" className="btn-discover">Discover More</Link>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function AboutComponent() {
                 <p>
                   We believe in transparency, performance, and long-term partnerships. Our approach is rooted in data-driven strategies, clear communication, and consistent execution—ensuring every campaign delivers real value, measurable growth, and lasting impact for our clients.
                 </p>
-                <Link href="/services" className="btn-learn">Learn More</Link>
+                <Link href="#" className="btn-learn">Learn More</Link>
               </div>
             </div>
             <div className="col-lg-6">

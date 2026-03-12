@@ -42,7 +42,7 @@ export default function ServicesComponent() {
                   </div>
                   <h4>{service.title}</h4>
                   <p>{service.description}</p>
-                  <Link href="/contact" className="btn-service">Learn More</Link>
+                  <Link href="#" className="btn-service">Learn More</Link>
                 </div>
               </div>
             ))}

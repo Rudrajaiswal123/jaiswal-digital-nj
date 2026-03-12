@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Digital Marketing Blog | SEO & Online Growth Tips India",
 
   description:
-    "Read the latest digital marketing blogs by Jaiswal Digital. Get expert insights on SEO, website development, e-commerce growth, social media marketing and performance marketing strategies in India.",
+    "Read our blog for Digital Marketing tips, Website Development guides, SEO Services insights and E-commerce Management strategies.",
 
   keywords: [
     "Digital Marketing Blog India",

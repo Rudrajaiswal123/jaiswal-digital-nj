@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "About Us - Digital Marketing Company in India",
 
   description:
-    "Learn more about Jaiswal Digital, a trusted digital marketing and website development company in India helping businesses grow through SEO, e-commerce management and creative branding solutions.",
+    "Learn about Jaiswal Digital, experts in Digital Marketing, Website Development, SEO Services and E-commerce Management helping businesses grow online.",
 
   keywords: [
     "About Jaiswal Digital",

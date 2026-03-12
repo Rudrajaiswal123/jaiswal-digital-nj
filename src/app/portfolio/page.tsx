@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Our Portfolio | Digital Marketing & Website Projects India",
 
   description:
-    "Explore Jaiswal Digital portfolio showcasing successful website development, SEO campaigns, e-commerce account management and social media marketing projects delivered across India.",
+    "View our portfolio featuring Digital Marketing, Website Development, SEO Services and E-commerce Management projects delivered for clients.",
 
   keywords: [
     "Digital Marketing Portfolio India",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Contact Jaiswal Digital - Digital Marketing Agency in India",
 
   description:
-    "Get in touch with Jaiswal Digital for website development, SEO services, e-commerce account management and social media marketing solutions across India. Contact us today.",
+    "Contact Jaiswal Digital for Digital Marketing, Website Development, SEO Services and E-commerce Management solutions for your business.",
 
   keywords: [
     "Contact Digital Marketing Agency India",

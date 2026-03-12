@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Digital Marketing & Website Development Company in India",
 
   description:
-    "Looking for the best digital marketing agency in India? Jaiswal Digital offers website development, digital marketing, e-commerce account management to grow your business online.",
+    "Digital Marketing agency offering Website Development, SEO Services, Social Media Marketing and E-commerce Management to grow your business online.",
 
   keywords: [
     "Best Digital Marketing Agency in India",

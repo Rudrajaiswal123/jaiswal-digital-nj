@@ -26,7 +26,7 @@ export default function HomeComponent() {
               </p>
               <div className="hero-buttons mt-4">
                 <div className="d-none d-lg-block">
-                  <Link href="/about" className="btn gradient-btn">
+                  <Link href="#" className="btn gradient-btn">
                     Learn more
                   </Link>
                 </div>
@@ -76,9 +76,9 @@ export default function HomeComponent() {
                   </div>
                   <h4>{service.title}</h4>
                   <p>{service.description}</p>
-                  <Link href="/services" className="btn-service">
+                  {/* <Link href="/services" className="btn-service">
                     Learn More
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             ))}

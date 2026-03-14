@@ -122,7 +122,7 @@ export default function ServicesComponent() {
                       <span>{skill.percentage}</span>
                     </div>
                     <div className="progress">
-                      <div className="progress-bar" style={{ width: skill.width }}></div>
+                      <div className={`progress-bar ${skill.width}`} ></div>
                     </div>
                   </div>
                 ))}

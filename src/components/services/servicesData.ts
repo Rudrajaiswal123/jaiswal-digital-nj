@@ -47,9 +47,9 @@ export const serviceList = [
 ];
 
 export const skills = [
-  { name: 'E-commerce Accout Management', percentage: '87%', width: '87%' },
-  { name: 'Website Development', percentage: '91%', width: '91%' },
-  { name: 'Digital Marketing', percentage: '74%', width: '74%' },
-  { name: 'Video Creation', percentage: '83%', width: '83%' }
+  { name: 'E-commerce Accout Management', percentage: '87%', width: 'width-87' },
+  { name: 'Website Development', percentage: '91%', width: 'width-91' },
+  { name: 'Digital Marketing', percentage: '74%', width: 'width-74' },
+  { name: 'Video Creation', percentage: '83%', width: 'width-83' }
 ];
 

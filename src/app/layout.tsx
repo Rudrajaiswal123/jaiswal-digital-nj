@@ -1,5 +1,5 @@
 import '../styles/globals.scss';
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from 'next/script';
 import { Poppins, Open_Sans } from "next/font/google";
 import RootTemplate from '@/template/RootTemplate';
@@ -18,6 +18,11 @@ const openSans = Open_Sans({
   display: "swap",
   variable: "--font-open-sans",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jaiswaldigital.com"),
@@ -59,12 +64,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://jaiswaldigital.com",
     languages: {
-    "en-IN": "https://jaiswaldigital.com",
-    "en": "https://jaiswaldigital.com",
-  },
+      "en-IN": "https://jaiswaldigital.com",
+      "en": "https://jaiswaldigital.com",
+    },
   },
 
   openGraph: {
+    title: "Jaiswal Digital | Digital Marketing & Website Development Company",
+    description:
+      "Professional digital marketing, SEO services, website development and e-commerce solutions for businesses across India.",
     siteName: "Jaiswal Digital",
     type: "website",
     locale: "en_IN",
@@ -102,17 +110,21 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} ${openSans.variable}`}>
       <head>
         <link rel='icon' href='/favicon.ico' />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYXRB3TNRF"></script>
-        <script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-YYXRB3TNRF"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YYXRB3TNRF');
-          `}
-        </script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YYXRB3TNRF');
+  `}
+        </Script>
         {/* Bootstrap JS Bundle */}
-<Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
 
         {/* Meta Pixel Code - Facebook Pixel */}
         <Script id="facebook-pixel" strategy="afterInteractive">
@@ -130,16 +142,16 @@ export default function RootLayout({
           `}
         </Script>
         <noscript>
-          <img 
-            height="1" 
-            width="1" 
+          <img
+            height="1"
+            width="1"
             className=' d-none'
             src="https://www.facebook.com/tr?id=1297926505582141&amp;ev=PageView&amp;noscript=1"
             alt=""
           />
         </noscript>
         {/* End Meta Pixel Code */}
-        
+
         {/* Organization Schema Markup */}
         <script type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -190,8 +202,8 @@ export default function RootLayout({
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "28.6139",
-                "longitude": "77.2090"
+                "latitude": "13.1986",
+                "longitude": "77.7066"
               },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
@@ -356,9 +368,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body className={`${poppins.variable} ${openSans.variable}`}>
         <RootTemplate>{children}</RootTemplate>
-        <Toaster 
+        <Toaster
           position="top-center"
           toastOptions={{
             duration: 4000,

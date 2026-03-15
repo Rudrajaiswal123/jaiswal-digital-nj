@@ -10,10 +10,8 @@ export default function RootTemplate(props: any) {
 
   const defaultTemplateRoutes: any = [
     '/',
-    '/about-us',
     '/about',
     '/services',
-    '/contact-us',
     '/contact',
     '/blog',
     '/portfolio',

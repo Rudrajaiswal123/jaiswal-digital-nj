@@ -82,7 +82,7 @@ export default function Header() {
                   onClick={handleLinkClick}
                   className={`nav-link ${isActive("/about") ? "active" : ""}`}
                 >
-                  About Us
+                  About
                 </Link>
               </li>
 

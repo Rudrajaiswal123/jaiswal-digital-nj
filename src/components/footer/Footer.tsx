@@ -20,7 +20,6 @@ export default function Footer() {
                   alt="Jaiswal Digital"
                   width={240}
                   height={80}
-                  className="footer-logo"
                 />
               </div>
 
@@ -84,10 +83,10 @@ export default function Footer() {
             <h5 className="footer-title">Useful Links</h5>
             <ul className="footer-links">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/about">About</Link></li>
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/portfolio">Portfolio</Link></li>
-              <li><Link href="/contact">Contact Us</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
 

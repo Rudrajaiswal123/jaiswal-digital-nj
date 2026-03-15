@@ -19,7 +19,7 @@ export default function HomeComponent() {
               <span className="hero-badge mb-4 d-inline-block">
                 WELCOME TO Jaiswal Digital
               </span>
-              <h1 className="hero-title">Powering Your Digital Growth.</h1>
+              <h1 className="hero-title">Powering Your Digital Growth</h1>
               <p className="hero-subtitle">
                 Smart strategies and performance-driven solutions to grow your
                 business online.
@@ -40,7 +40,7 @@ export default function HomeComponent() {
         <div className="container">
           <div className="trusted-box">
             <h2 className="trusted-title">
-              Join hundreds of growing brands scaling their digital success.
+              Join hundreds of growing brands scaling their digital success
             </h2>
             <div className="trusted-logos">
               {trustedLogos.map((logo, index) => (

@@ -27,6 +27,10 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: "https://jaiswaldigital.com/services",
+    languages: {
+    "en-IN": "https://jaiswaldigital.com/services",
+    "en": "https://jaiswaldigital.com/sservices",
+  },
   },
 
   openGraph: {

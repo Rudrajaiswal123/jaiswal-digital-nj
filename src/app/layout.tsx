@@ -56,6 +56,14 @@ export const metadata: Metadata = {
     telephone: false,
   },
 
+  alternates: {
+    canonical: "https://jaiswaldigital.com",
+    languages: {
+    "en-IN": "https://jaiswaldigital.com",
+    "en": "https://jaiswaldigital.com",
+  },
+  },
+
   openGraph: {
     siteName: "Jaiswal Digital",
     type: "website",
@@ -125,7 +133,7 @@ export default function RootLayout({
           <img 
             height="1" 
             width="1" 
-            style={{display: 'none'}}
+            className=' d-none'
             src="https://www.facebook.com/tr?id=1297926505582141&amp;ev=PageView&amp;noscript=1"
             alt=""
           />

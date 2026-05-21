@@ -1,3 +1,4 @@
+
 import '../styles/globals.scss';
 import type { Metadata, Viewport } from "next";
 import Script from 'next/script';

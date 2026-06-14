@@ -55,6 +55,20 @@ export default function ServicesComponent() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-6">
+              <div className="service-image-box">
+                <Image 
+                  src="/assets/images/about-pic2.webp" 
+                  alt="Service Image"
+                  width={500}
+                  height={400}
+                  className="service-image-full"
+                />
+                <div className="image-arrow">
+                  <i className="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
               <div className="service-content">
                 <h1>
                   All-in-One Digital Services for Growth
@@ -81,20 +95,6 @@ export default function ServicesComponent() {
                       ))}
                     </ul>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="service-image-box">
-                <Image 
-                  src="/assets/images/about-pic2.webp" 
-                  alt="Service Image"
-                  width={500}
-                  height={400}
-                  className="service-image-full"
-                />
-                <div className="image-arrow">
-                  <i className="bi bi-arrow-up-right"></i>
                 </div>
               </div>
             </div>

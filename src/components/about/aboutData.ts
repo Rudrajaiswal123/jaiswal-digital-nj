@@ -1,10 +1,13 @@
 
 export const trustedLogos = [
-  { src: '/assets/images/rakesh-masala-logo.webp', alt: 'ram rakesh' },
-  { src: '/assets/images/dns-valuation.webp', alt: 'dns' },
+  { src: '/assets/images/client-logo.jpg', alt: 'seo in patna' },
   { src: '/assets/images/mukesh-logo.webp', alt: 'mukesh' },
-  { src: '/assets/images/salesOn-logo.webp', alt: 'saleson' },
-  { src: '/assets/images/mobile-factory.webp', alt: 'mobile factory' }
+  { src: '/assets/images/lwk-logo.jpg', alt: 'digital marketing in patna' },
+  { src: '/assets/images/salesOn-logo.webp', alt: 'saleson' },  
+  { src: '/assets/images/dns-valuation.webp', alt: 'dns' },
+  { src: '/assets/images/rakesh-masala-logo.webp', alt: 'ram-rakesh' },
+  { src: '/assets/images/taxfilingca-logo.jpg', alt: 'seo-patna' },
+  { src: '/assets/images/mobile-factory.webp', alt: 'mobile factory' },
 ];
 
 export const teamMembers = [

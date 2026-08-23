@@ -68,10 +68,10 @@ export const testimonials = [
     text: 'Mera offline shop mein sales kaafi kam ho gayi thi aur mujhe online business ka experience nahi tha. Jaiswal Digital ke support se mera Meesho aur Amazon account setup hua aur poora e-commerce business manage kiya gaya. Ab main online products sell kar raha hoon aur sales grow ho rahi hain.'
   },
   {
-    image: '/assets/images/rakesh-logo-w.webp',
-    name: 'Amit Kesari',
-    company: 'Shree Ram Rakesh',
-    text: 'Jaiswal Digital ne humare masala products ke liye social media marketing aur product video ads ka excellent kaam kiya. Videos attractive the aur product clearly showcase hua, jisse reach aur engagement dono better mile. Brand promotion ke liye ek trusted aur result-oriented team.'
+    image: '/assets/images/lwk-logo.jpg',
+    name: 'CA Gyanchand Agarwal',
+    company: 'Legalwalakart',
+    text: 'Great experience with this digital marketing agency! The team is professional, responsive, and understands digital marketing very well. Their SEO, Google Ads, social media, and overall marketing strategies have helped improve our online presence. Highly recommended for businesses looking for reliable digital marketing services.'
   }
 ];
 

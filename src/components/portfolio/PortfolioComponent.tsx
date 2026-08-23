@@ -34,6 +34,12 @@ const portfolioItems = [
     title: "Product Promo Video",
     category: "E-commerce Marketing",
   },
+  {
+    type: "video",
+    src: "/assets/images/mukesh-masala-15-aug.mp4",
+    title: "Product Promo Video",
+    category: "Social Media Marketing",
+  },
 ];
 
 const testimonials = [
@@ -56,10 +62,10 @@ const testimonials = [
     text: "Mera offline shop mein sales kaafi kam ho gayi thi aur mujhe online business ka experience nahi tha. Jaiswal Digital ke support se mera Meesho aur Amazon account setup hua aur poora e-commerce business manage kiya gaya. Ab main online products sell kar raha hoon aur sales grow ho rahi hain.",
   },
   {
-    image: "/assets/images/rakesh-logo-w.webp",
-    name: "Amit Kesari",
-    company: "Shree Ram Rakesh",
-    text: "Jaiswal Digital ne humare masala products ke liye social media marketing aur product video ads ka excellent kaam kiya. Videos attractive the aur product clearly showcase hua, jisse reach aur engagement dono better mile. Brand promotion ke liye ek trusted aur result-oriented team.",
+    image: '/assets/images/lwk-logo.jpg',
+    name: 'CA Gyanchand Agarwal',
+    company: 'Legalwalakart',
+    text: 'Great experience with this digital marketing agency! The team is professional, responsive, and understands digital marketing very well. Their SEO, Google Ads, social media, and overall marketing strategies have helped improve our online presence. Highly recommended for businesses looking for reliable digital marketing services.'
   },
 ];
 
@@ -106,8 +112,8 @@ export default function PortfolioComponent() {
             ))}
           </div>
 
-          <div className="row justify-content-center g-4">
-            {portfolioItems.slice(2).map((item, index) => (
+          <div className="row justify-content-center g-4 mb-5">
+            {portfolioItems.slice(2,5).map((item, index) => (
               <div key={index} className="col-lg-3 col-md-6">
                 <div className="portfolio-card">
                   <div className="portfolio-media">
@@ -116,6 +122,28 @@ export default function PortfolioComponent() {
                       controls
                       preload="metadata"
                       playsInline
+                    ></video>
+                  </div>
+                  <div className="portfolio-content">
+                    {item.title && <h5>{item.title}</h5>}
+                    <span>{item.category}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="row justify-content-center g-4">
+            {portfolioItems.slice(5).map((item, index) => (
+              <div key={index} className="col-lg-3 col-md-6">
+                <div className="portfolio-card">
+                  <div className="portfolio-media-2">
+                    <video
+                      src={item.src}
+                      controls
+                      preload="metadata"
+                      playsInline
+                      className="landscape-video"
                     ></video>
                   </div>
                   <div className="portfolio-content">

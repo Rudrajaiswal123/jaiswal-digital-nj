@@ -9,11 +9,16 @@ interface ContactFormProps {
   subtitle?: string;
   showCompanyField?: boolean;
   showSubjectField?: boolean;
+  showMessageField?: boolean;
+  showCityField?: boolean;
+  showServiceField?: boolean;
+  messagePlaceholder?: string;
   emailServiceId: string;
   emailTemplateId: string;
   emailPublicKey?: string;
   buttonText?: string;
   onSuccess?: () => void;
+  whatsappNumber?: string;
   className?: string;
 }
 
@@ -23,6 +28,8 @@ interface FormData {
   email: string;
   mobile: string;
   subject: string;
+  city: string;
+  service: string;
   message: string;
 }
 
@@ -32,6 +39,8 @@ const initialFormData: FormData = {
   email: '',
   mobile: '',
   subject: '',
+  city: '',
+  service: '',
   message: ''
 };
 
@@ -40,11 +49,16 @@ export default function ContactForm({
   subtitle = 'Please feel free to send us any questions.',
   showCompanyField = true,
   showSubjectField = false,
+  showMessageField = true,
+  showCityField = false,
+  showServiceField = false,
+  messagePlaceholder = 'Write your message here...',
   emailServiceId,
   emailTemplateId,
   emailPublicKey = '',
   buttonText = 'SEND MESSAGE',
   onSuccess,
+  whatsappNumber,
   className = ''
 }: ContactFormProps) {
   const [formData, setFormData] = useState<FormData>(initialFormData);
@@ -57,7 +71,7 @@ export default function ContactForm({
     }
   }, [emailPublicKey]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -71,6 +85,8 @@ export default function ContactForm({
       email: formData.email,
       mobile: formData.mobile,
       subject: formData.subject,
+      city: formData.city,
+      service: formData.service,
       message: formData.message,
     };
 
@@ -81,6 +97,24 @@ export default function ContactForm({
       toast.success('Message sent successfully!', {
         icon: '✅',
       });
+      if (whatsappNumber) {
+        const whatsappMessage = [
+          'New website lead',
+          `Name: ${formData.name}`,
+          `Company: ${formData.company || 'Not provided'}`,
+          `Mobile: ${formData.mobile}`,
+          `Email: ${formData.email}`,
+          `City: ${formData.city || 'Not provided'}`,
+          `Service: ${formData.service || 'Not provided'}`,
+          `Subject: ${formData.subject || 'Not provided'}`,
+          `Message: ${formData.message || 'Not provided'}`,
+        ].join('\n');
+        window.open(
+          `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`,
+          '_blank',
+          'noopener,noreferrer'
+        );
+      }
       onSuccess?.();
     } catch (error) {
       console.error('EmailJS Error:', error);
@@ -168,6 +202,23 @@ export default function ContactForm({
             />
           </div>
 
+          {/* City Field */}
+          {showCityField && (
+            <div className="col-md-6">
+              <label htmlFor="city" className="form-label text-light">City</label>
+              <input
+                type="text"
+                placeholder="Enter your city"
+                className="form-control"
+                id="city"
+                name="city"
+                value={formData.city}
+                onChange={handleChange}
+                required
+              />
+            </div>
+          )}
+
           {/* Subject Field */}
           {showSubjectField && (
             <div className="col-12">
@@ -185,21 +236,47 @@ export default function ContactForm({
             </div>
           )}
 
+          {/* Service Field */}
+          {showServiceField && (
+            <div className="col-12">
+              <label htmlFor="service" className="form-label text-light">Our Service</label>
+              <select
+                className="form-select"
+                id="service"
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                required
+              >
+                <option value="" disabled>Select a service</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Social Media Management">Social Media Management</option>
+                <option value="Google Ads">Google Ads</option>
+                <option value="Meta Ads">Meta Ads</option>
+                <option value="SEO">SEO</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Video Creation / Video Editing">Video Creation / Video Editing</option>
+              </select>
+            </div>
+          )}
+
           {/* Message Field */}
-          <div className="col-12">
-            <label htmlFor="message" className="form-label text-light">Message</label>
-            <textarea 
-              rows={4} 
-              placeholder="Write your message here..." 
-              className="form-control" 
-              id="message" 
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              suppressHydrationWarning
-            ></textarea>
-          </div>
+          {showMessageField && (
+            <div className="col-12">
+              <label htmlFor="message" className="form-label text-light">Message</label>
+              <textarea 
+                rows={4} 
+                placeholder={messagePlaceholder}
+                className="form-control" 
+                id="message" 
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                suppressHydrationWarning
+              ></textarea>
+            </div>
+          )}
 
           {/* Submit Button */}
           <div className="col-12">

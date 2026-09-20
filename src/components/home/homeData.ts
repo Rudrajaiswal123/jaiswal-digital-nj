@@ -38,14 +38,14 @@ export const services = [
 ];
 
 export const trustedLogos = [
-  { src: '/assets/images/client-logo.jpg', alt: 'seo in patna' },
-  { src: '/assets/images/mukesh-logo.webp', alt: 'mukesh' },
-  { src: '/assets/images/lwk-logo.jpg', alt: 'digital marketing in patna' },
-  { src: '/assets/images/salesOn-logo.webp', alt: 'saleson' },  
-  { src: '/assets/images/dns-valuation.webp', alt: 'dns' },
-  { src: '/assets/images/rakesh-masala-logo.webp', alt: 'ram-rakesh' },
-  { src: '/assets/images/taxfilingca-logo.jpg', alt: 'seo-patna' },
-  { src: '/assets/images/mobile-factory.webp', alt: 'mobile factory' },    
+  { src: '/assets/images/client-logo.jpg', alt: 'KAPG & Associates' },
+  { src: '/assets/images/mukesh-logo.webp', alt: 'Mukesh Food Products' },
+  { src: '/assets/images/lwk-logo.jpg', alt: 'LegalwalaKart' },
+  { src: '/assets/images/salesOn-logo.webp', alt: 'SalesOn' },
+  { src: '/assets/images/dns-valuation.webp', alt: 'DNS Valuation' },
+  { src: '/assets/images/rakesh-masala-logo.webp', alt: 'Ram Rakesh Masala' },
+  { src: '/assets/images/taxfilingca-logo.jpg', alt: 'Tax Filing CA' },
+  { src: '/assets/images/mobile-factory.webp', alt: 'Mobile Factory' },
 ];
 
 export const testimonials = [

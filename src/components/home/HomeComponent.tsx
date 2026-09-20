@@ -1,21 +1,21 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import "./homeComponent.scss";
 import { services, trustedLogos, testimonials, skills } from "./homeData";
 import ContactForm from "../contact-form/ContactForm";
 import FAQ from "../faq/FAQ";
+import TrustedSection from "../trusted-section/TrustedSection";
 
 export default function HomeComponent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-section min-vh-40 d-flex align-items-center justify-content-center">
+      <section className="hero-section home-hero d-flex align-items-center">
         <div className="container">
-          <div className="row">
-            <div className="col-12 text-center">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-6">
               <span className="hero-badge mb-4 d-inline-block">
                 WELCOME TO Jaiswal Digital
               </span>
@@ -24,39 +24,29 @@ export default function HomeComponent() {
                 Smart strategies and performance-driven solutions to grow your
                 business online.
               </p>
-              <div className="hero-buttons mt-4">
-                <div className="d-none d-lg-block">
-                  <Link href="#" className="btn gradient-btn">
-                    Learn more
-                  </Link>
-                </div>
-              </div>
+              <p className="hero-form-note mb-0">Tell us about your business and we&apos;ll be in touch shortly.</p>
+            </div>
+            <div className="col-lg-5 ms-lg-auto">
+              <ContactForm
+                className="hero-lead-form"
+                title="Get a free consultation"
+                subtitle="Share your details and let&apos;s discuss your growth goals."
+                showCompanyField={false}
+                showCityField={true}
+                showServiceField={true}
+                showMessageField={true}
+                messagePlaceholder="Tell us about your business and requirements..."
+                emailServiceId="service_8i6vy19"
+                emailTemplateId="template_0wppclq"
+                emailPublicKey="S9FlpPUNmoshtqgjY"
+                buttonText="GET STARTED"
+                whatsappNumber="9353042456"
+              />
             </div>
           </div>
         </div>
       </section>
-      {/* Trusted Section */}
-      <section className="trusted-section">
-        <div className="container">
-          <div className="trusted-box">
-            <h2 className="trusted-title">
-              Join hundreds of growing brands scaling their digital success
-            </h2>
-            <div className="trusted-logos">
-              {trustedLogos.map((logo, index) => (
-                <Image
-                  key={index}
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={120}
-                  height={100}
-                  className="home-logo-img"
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <TrustedSection logos={trustedLogos} />
 
       {/* Services Cards Section */}
       <section className="services-cards-section">

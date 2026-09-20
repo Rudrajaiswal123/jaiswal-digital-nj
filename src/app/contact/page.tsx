@@ -10,10 +10,10 @@ export default function Contact() {
 
 // Meta Information
 export const metadata: Metadata = {
-  title: "Contact Jaiswal Digital - Digital Marketing Agency in India",
+  title: "Contact Jaiswal Digital | Digital Marketing & Website Development Agency",
 
   description:
-    "Contact Jaiswal Digital for Digital Marketing, Website Development, SEO Services and E-commerce Management solutions for your business.",
+    "Contact Jaiswal Digital for website development, SEO, local SEO, Google Ads, Meta Ads, social media management and digital marketing services in India.",
 
   keywords: [
     "Contact Digital Marketing Agency India",

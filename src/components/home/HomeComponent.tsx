@@ -3,10 +3,14 @@
 import React from "react";
 import Image from "next/image";
 import "./homeComponent.scss";
-import { services, trustedLogos, testimonials, skills } from "./homeData";
+import { trustedLogos, testimonials, skills } from "./homeData";
 import ContactForm from "../contact-form/ContactForm";
 import FAQ from "../faq/FAQ";
 import TrustedSection from "../trusted-section/TrustedSection";
+import ServicesSection from "../services-section/ServicesSection";
+import { agencyServices } from "../services-section/serviceData";
+import ServicePricingSection from "../service-pricing/ServicePricingSection";
+import { servicePricing } from "../service-pricing/servicePricingData";
 
 export default function HomeComponent() {
   return (
@@ -36,6 +40,7 @@ export default function HomeComponent() {
                 showServiceField={true}
                 showMessageField={true}
                 messagePlaceholder="Tell us about your business and requirements..."
+                requiredFields={["name", "city"]}
                 emailServiceId="service_8i6vy19"
                 emailTemplateId="template_0wppclq"
                 emailPublicKey="S9FlpPUNmoshtqgjY"
@@ -48,33 +53,7 @@ export default function HomeComponent() {
       </section>
       <TrustedSection logos={trustedLogos} />
 
-      {/* Services Cards Section */}
-      <section className="services-cards-section">
-        <div className="container">
-          <div className="text-center mb-5">
-            <span className="section-tag">OUR SERVICES</span>
-            <h2 className="section-title">
-              Digital Solutions Built to Scale Your Business.
-            </h2>
-          </div>
-          <div className="row g-4">
-            {services.map((service, index) => (
-              <div key={index} className="col-lg-4 col-md-6">
-                <div className="service-card">
-                  <div className="service-icon">
-                    <i className={service.icon}></i>
-                  </div>
-                  <h4>{service.title}</h4>
-                  <p>{service.description}</p>
-                  {/* <Link href="/services" className="btn-service">
-                    Learn More
-                  </Link> */}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ServicesSection services={agencyServices} />
 
       {/* Testimonial Section */}
       <section className="testimonial-section" id="testimonialCarousel">
@@ -103,6 +82,8 @@ export default function HomeComponent() {
           </div>
         </div>
       </section>
+
+      <ServicePricingSection services={servicePricing} />
 
       {/* FAQ Section */}
       <FAQ />

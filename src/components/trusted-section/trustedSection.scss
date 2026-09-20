@@ -1,7 +1,7 @@
 .brand-marquee-section {
   position: relative;
   overflow: hidden;
-  padding: clamp(4.5rem, 7vw, 7rem) 1.5rem;
+  padding: clamp(1.5rem, 4vw, 7rem) 1.5rem;
   background:
     radial-gradient(circle at 50% 15%, rgba(133, 79, 255, 0.22), transparent 34rem),
     linear-gradient(125deg, #0b0719 0%, #1c1038 48%, #0d0820 100%);

@@ -13,6 +13,7 @@ interface ContactFormProps {
   showCityField?: boolean;
   showServiceField?: boolean;
   messagePlaceholder?: string;
+  requiredFields?: Array<keyof FormData>;
   emailServiceId: string;
   emailTemplateId: string;
   emailPublicKey?: string;
@@ -53,6 +54,7 @@ export default function ContactForm({
   showCityField = false,
   showServiceField = false,
   messagePlaceholder = 'Write your message here...',
+  requiredFields = ['name', 'mobile', 'email', 'message'],
   emailServiceId,
   emailTemplateId,
   emailPublicKey = '',
@@ -64,6 +66,7 @@ export default function ContactForm({
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const isRequired = (field: keyof FormData) => requiredFields.includes(field);
 
   useEffect(() => {
     if (emailPublicKey) {
@@ -148,7 +151,7 @@ export default function ContactForm({
               name="name" 
               value={formData.name}
               onChange={handleChange}
-              required 
+              required={isRequired('name')}
               suppressHydrationWarning
             />
           </div>
@@ -181,7 +184,7 @@ export default function ContactForm({
               name="mobile"
               value={formData.mobile}
               onChange={handleChange}
-              required 
+              required={isRequired('mobile')}
               suppressHydrationWarning
             />
           </div>
@@ -197,7 +200,7 @@ export default function ContactForm({
               name="email"
               value={formData.email}
               onChange={handleChange}
-              required 
+              required={isRequired('email')}
               suppressHydrationWarning
             />
           </div>
@@ -214,7 +217,7 @@ export default function ContactForm({
                 name="city"
                 value={formData.city}
                 onChange={handleChange}
-                required
+                required={isRequired('city')}
               />
             </div>
           )}
@@ -246,7 +249,7 @@ export default function ContactForm({
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                required
+                required={isRequired('service')}
               >
                 <option value="" disabled>Select a service</option>
                 <option value="Website Development">Website Development</option>
@@ -272,7 +275,7 @@ export default function ContactForm({
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                required
+                required={isRequired('message')}
                 suppressHydrationWarning
               ></textarea>
             </div>

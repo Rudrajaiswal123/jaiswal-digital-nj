@@ -12,11 +12,13 @@ interface TrustedLogos {
 interface TrustedSectionProps {
   logos: TrustedLogos[];
   title?: string;
+  showTitle?: boolean;
 }
 
 export default function TrustedSection({
   logos,
-  title = 'Join hundreds of growing brands scaling their digital success',
+  title = 'Building Digital Success for Growing Businesses',
+  showTitle = true,
 }: TrustedSectionProps) {
   const viewportRef = useRef<HTMLDivElement>(null);
   const carouselLogos = [...logos, ...logos];
@@ -37,7 +39,7 @@ export default function TrustedSection({
   return (
     <section className="brand-marquee-section" aria-labelledby="trusted-brands-title">
       <div className="brand-marquee-container">
-        <h2 id="trusted-brands-title" className="brand-marquee-title">{title}</h2>
+        {showTitle && <h2 id="trusted-brands-title" className="brand-marquee-title">{title}</h2>}
         <div className="brand-carousel">
           <div className="brand-carousel-controls" aria-label="Client logo carousel controls">
             <button type="button" className="brand-carousel-button" onClick={() => moveCarousel('previous')} aria-label="Show previous client logos">
@@ -66,4 +68,3 @@ export default function TrustedSection({
     </section>
   );
 }
-

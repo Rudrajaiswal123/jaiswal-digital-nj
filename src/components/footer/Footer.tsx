@@ -30,7 +30,7 @@ export default function Footer() {
 
               <div className="footer-social">
                 <a
-                  href="https://www.facebook.com/profile.php?id=61586092373448"
+                  href="https://www.facebook.com/jaiswaldigital15"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -38,7 +38,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/jaiswaldigital15/"
+                  href="https://www.instagram.com/jaiswaldigitalofficial/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

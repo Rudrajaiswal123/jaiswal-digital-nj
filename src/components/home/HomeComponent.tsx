@@ -132,15 +132,6 @@ export default function HomeComponent() {
         </div>
       </section>
 
-      {/* WhatsApp Float */}
-      <a
-        href="https://wa.me/919353042456"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="whatsapp-float"
-      >
-        <i className="bi bi-whatsapp"></i>
-      </a>
     </>
   );
 }

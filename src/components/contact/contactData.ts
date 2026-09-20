@@ -26,8 +26,7 @@ export const contactInfo = [
 ];
 
 export const socialLinks = [
-  { icon: 'bi bi-facebook', url: 'https://www.facebook.com/profile.php?id=61586092373448' },
-  { icon: 'bi bi-instagram', url: 'https://www.instagram.com/jaiswaldigital15/' },
-  { icon: 'bi bi-linkedin', url: 'https://www.linkedin.com/in/jaiswal-digital/' },
+  { icon: 'bi bi-facebook', url: 'https://www.facebook.com/jaiswaldigital15' },
+  { icon: 'bi bi-instagram', url: 'https://www.instagram.com/jaiswaldigitalofficial/' },
   { icon: 'bi bi-youtube', url: 'https://www.youtube.com/@JaiswalDigital15' }
 ];

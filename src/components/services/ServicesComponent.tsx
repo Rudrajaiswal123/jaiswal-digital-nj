@@ -109,6 +109,17 @@ const detailImages = [
   "/assets/images/graphic-designing-services-jaiswal-digital.png",
   "/assets/images/video-editing-creative-content-services-jaiswal-digital.png",
 ];
+
+const serviceIconImages: Record<string, string> = {
+  'Website Development': '/assets/icons/website-development.png',
+  'SEO': '/assets/icons/seo-icon.png',
+  'Local SEO': '/assets/icons/local-seo.png',
+  'Google Ads': '/assets/icons/Google_Ads.webp',
+  'Meta Ads': '/assets/icons/meta-icon.webp',
+  'Social Media Management': '/assets/icons/smm-icon.png',
+  'Graphic Designing': '/assets/icons/graphic-design.png',
+  'Video Editing': '/assets/icons/video-editing.png',
+};
 const faq = [
   [
     "What digital marketing services does Jaiswal Digital provide?",
@@ -197,7 +208,7 @@ export default function ServicesComponent() {
           <div className="overview-grid">
             {items.map(([icon, title, text]) => (
               <article key={title}>
-                <i className={`bi ${icon}`} />
+                <Image src={serviceIconImages[title]} alt="" width={48} height={48} className="service-brand-icon" />
                 <h3>{title}</h3>
                 <p>{text}</p>
                 <Link href="#consultation">

@@ -4,7 +4,6 @@ import './servicePricingSection.scss';
 
 function ServicePricingCard({ service }: { service: ServicePrice }) {
   return <article className="pricing-service-card">
-    <div className="pricing-service-icon" aria-hidden="true"><i className={service.icon} /></div>
     <h3>{service.title}</h3>
     <span className="pricing-starting-label">Starting from</span>
     <p className="pricing-price">{service.price} {service.unit && <small>{service.unit}</small>}</p>

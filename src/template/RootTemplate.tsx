@@ -52,6 +52,15 @@ export default function RootTemplate(props: any) {
   return (
     <>
       {RenderUI()}
+      <a
+        href="https://wa.me/919353042456"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-float"
+        aria-label="Chat with Jaiswal Digital on WhatsApp"
+      >
+        <i className="bi bi-whatsapp" aria-hidden="true" />
+      </a>
       <script src='scripts/wow.min.js'></script>
       <script>new WOW().init();</script>
     </>

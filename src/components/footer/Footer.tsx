@@ -46,14 +46,6 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/jaiswal-digital/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-linkedin"></i>
-                </a>
-
-                <a
                   href="https://www.youtube.com/@JaiswalDigital15"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -104,3 +104,9 @@
   .brand-carousel-viewport { grid-auto-columns: calc((100% - 1.25rem) / 2); gap: 1.25rem; }
   .brand-logo-card { height: 7rem; padding: 0.85rem 1rem; }
 }
+
+.brand-marquee-section{padding-top:3.5rem;padding-bottom:3.5rem}.brand-marquee-title{margin-bottom:2rem}.brand-carousel-viewport{gap:1rem}.brand-logo-card{height:7.25rem;padding:.7rem 1rem}@media(max-width:767px){.brand-marquee-section{padding-top:2.75rem;padding-bottom:2.75rem}.brand-logo-card{height:6rem}}
+
+
+.brand-logo-card{display:flex;align-items:center;justify-content:center}.brand-logo-image{margin:auto;object-position:center center;vertical-align:middle}
+

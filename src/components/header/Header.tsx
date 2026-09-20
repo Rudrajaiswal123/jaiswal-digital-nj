@@ -11,7 +11,11 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const isActive = (path: string) => pathname === path;
+  const isActive = (path: string) => {
+    const normalizedPathname = pathname.replace(/\/$/, '') || '/';
+    const normalizedPath = path.replace(/\/$/, '') || '/';
+    return normalizedPathname === normalizedPath;
+  };
 
   const handleLinkClick = () => {
     setMenuOpen(false);

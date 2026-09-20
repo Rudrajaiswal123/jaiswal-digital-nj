@@ -5,12 +5,12 @@ export const contactInfo = [
     content: '19th Cross rd, Kaggadasapura\nBengaluru, Karnataka 560093',
     isGeo: true
   },
-  {
-    icon: 'bi bi-envelope',
-    title: 'EMAIL SUPPORT',
-    content: 'rudra@jaiswaldigital.com',
-    isGeo: false
-  },
+  // {
+  //   icon: 'bi bi-envelope',
+  //   title: 'EMAIL SUPPORT',
+  //   content: 'rudra@jaiswaldigital.com',
+  //   isGeo: false
+  // },
   {
     icon: 'bi bi-geo-alt',
     title: 'BRANCH OFFICE',

@@ -1,191 +1,185 @@
 "use client";
-
-import React from "react";
-import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import ContactForm from "../contact-form/ContactForm";
 import "./portfolioComponent.scss";
-
-const portfolioItems = [
+const projects = [
   {
-    type: "video",
+    name: "Social Media Campaign",
+    category: "Social Media",
     src: "/assets/images/smm-ads.mp4",
-    category: "Social Media Marketing",
+    desc: "Creative social media campaign content developed for digital communication.",
+    tags: ["Social Media", "Creative"],
+    featured: true,
   },
   {
-    type: "video",
+    name: "Digital Advertising Creative",
+    category: "Digital Marketing",
     src: "/assets/images/jd-ads1.mp4",
-    category: "Social Media Marketing",
+    desc: "Performance-focused advertising creative for a digital campaign.",
+    tags: ["Ads", "Creative"],
   },
   {
-    type: "video",
+    name: "Mukesh Food Products Reel",
+    category: "Video",
     src: "/assets/images/mukesh-masala.mp4",
-    title: "Brand Reel",
-    category: "Social Media Marketing",
+    desc: "Brand reel created for food and FMCG marketing.",
+    tags: ["Video", "Social Media"],
   },
   {
-    type: "video",
+    name: "Festival Video",
+    category: "Video",
     src: "/assets/images/cueen-reel-hny.mp4",
-    title: "Festival Video",
-    category: "Website Promotion",
+    desc: "Seasonal promotional content for business communication.",
+    tags: ["Video", "Creative"],
   },
   {
-    type: "video",
+    name: "Product Promotion",
+    category: "E-commerce",
     src: "/assets/images/car-vacuum.mp4",
-    title: "Product Promo Video",
-    category: "E-commerce Marketing",
+    desc: "Product video created for e-commerce marketing.",
+    tags: ["E-commerce", "Video"],
   },
   {
-    type: "video",
+    name: "Product Creative",
+    category: "Social Media",
     src: "/assets/images/mukesh-masala-15-aug.mp4",
-    title: "Product Promo Video",
-    category: "Social Media Marketing",
+    desc: "Social-first product promotion content.",
+    tags: ["Social Media", "Creative"],
   },
 ];
-
-const testimonials = [
-  {
-    image: "/assets/images/mukesh-logo-w.webp",
-    name: "Mukesh Suri",
-    company: "Mukesh Food Products",
-    text: "Maine Jaiswal Digital ki digital marketing services li hain. Unke product video ads creative aur engaging the, jisse brand reach aur customer interest dono improve hua. Social media marketing ke liye ek reliable aur professional team hai.",
-  },
-  {
-    image: "/assets/images/dns-valuation.webp",
-    name: "Ujjwal Kumar",
-    company: "DNS Valuation",
-    text: "Jaiswal Digital ne humare business ke liye ek custom application develop kiya, jisse property details form fill karna pe PDF file download ho jata hai. Ab paper par details likhne ki koi zarurat nahi padti—sab kuch digital ho gaya hai. Is solution ne humara kaam fast, organized aur efficient bana diya.",
-  },
-  {
-    image: "/assets/images/male-team2.webp",
-    name: "Abhishek vaish",
-    company: "Gift Corner Owner",
-    text: "Mera offline shop mein sales kaafi kam ho gayi thi aur mujhe online business ka experience nahi tha. Jaiswal Digital ke support se mera Meesho aur Amazon account setup hua aur poora e-commerce business manage kiya gaya. Ab main online products sell kar raha hoon aur sales grow ho rahi hain.",
-  },
-  {
-    image: '/assets/images/lwk-logo.jpg',
-    name: 'CA Gyanchand Agarwal',
-    company: 'Legalwalakart',
-    text: 'Great experience with this digital marketing agency! The team is professional, responsive, and understands digital marketing very well. Their SEO, Google Ads, social media, and overall marketing strategies have helped improve our online presence. Highly recommended for businesses looking for reliable digital marketing services.'
-  },
+const filters = [
+  "All",
+  "Digital Marketing",
+  "E-commerce",
+  "Social Media",
+  "Video",
 ];
-
 export default function PortfolioComponent() {
+  const [filter, setFilter] = useState("All");
+  const visible =
+    filter === "All" ? projects : projects.filter((p) => p.category === filter);
+  const featured = projects[0];
   return (
-    <>
-      {/* Hero Section */}
-      <section className="hero-section min-vh-40 d-flex align-items-center">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h1 className="hero-title">Portfolio</h1>
+    <main className="portfolio-new">
+      <section className="portfolio-hero">
+        <div className="portfolio-wrap">
+          <nav aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span>/</span>
+            <span>Portfolio</span>
+          </nav>
+          <div className="portfolio-hero-grid">
+            <div>
+              <span>OUR PORTFOLIO</span>
+              <h1>Digital Projects Built for Growing Businesses</h1>
+              <p>
+                Explore selected work across digital marketing, e-commerce and
+                creative content. Each project is designed around business
+                goals, audience and digital requirements.
+              </p>
+              <Link href="#enquiry" className="portfolio-primary">
+                Start Your Project <i className="bi bi-arrow-right" />
+              </Link>
+              <Link href="/services" className="portfolio-secondary">
+                Explore Services
+              </Link>
             </div>
+            <div className="portfolio-art"><Image src="/assets/images/jaiswal-digital-website-development-digital-marketing-portfolio.png" alt="Jaiswal Digital portfolio projects" width={700} height={500} priority className="page-hero-image" /></div>
           </div>
         </div>
       </section>
-
-      {/* Portfolio Section */}
-      <section className="client portfolio">
-        <div className="container">
-          {/* Section Heading */}
-          <div className="text-center mb-5">
-            <span className="section-tag">OUR WORK</span>
-            <h2 className="section-title">Creative Portfolio</h2>
-          </div>
-
-          <div className="row justify-content-center g-4 mb-5">
-            {portfolioItems.slice(0, 2).map((item, index) => (
-              <div key={index} className="col-lg-3 col-md-6">
-                <div className="portfolio-card">
-                  <div className="portfolio-media">
-                    <video
-                      src={item.src}
-                      controls
-                      preload="metadata"
-                      playsInline
-                    ></video>
-                  </div>
-                  <div className="portfolio-content">
-                    <span>{item.category}</span>
-                  </div>
-                </div>
-              </div>
+      <section className="project-section">
+        <div className="portfolio-wrap">
+          <header>
+            <h2>Our Digital Work</h2>
+            <p>
+              Selected website, digital marketing, e-commerce and creative
+              projects.
+            </p>
+          </header>
+          <div className="filters" role="group" aria-label="Filter projects">
+            {filters.map((x) => (
+              <button
+                key={x}
+                onClick={() => setFilter(x)}
+                className={filter === x ? "active" : ""}
+              >
+                {x}
+              </button>
             ))}
           </div>
-
-          <div className="row justify-content-center g-4 mb-5">
-            {portfolioItems.slice(2,5).map((item, index) => (
-              <div key={index} className="col-lg-3 col-md-6">
-                <div className="portfolio-card">
-                  <div className="portfolio-media">
-                    <video
-                      src={item.src}
-                      controls
-                      preload="metadata"
-                      playsInline
-                    ></video>
-                  </div>
-                  <div className="portfolio-content">
-                    {item.title && <h5>{item.title}</h5>}
-                    <span>{item.category}</span>
-                  </div>
+          <div className="project-grid">
+            {visible.map((p) => (
+              <article key={p.name}>
+                <video src={p.src} controls preload="metadata" playsInline />
+                <div>
+                  <span>{p.category}</span>
+                  <h3>{p.name}</h3>
+                  <p>{p.desc}</p>
+                  <small>{p.tags}</small>
+                  <Link href="#enquiry">
+                    View Project <i className="bi bi-arrow-right" />
+                  </Link>
                 </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="row justify-content-center g-4">
-            {portfolioItems.slice(5).map((item, index) => (
-              <div key={index} className="col-lg-3 col-md-6">
-                <div className="portfolio-card">
-                  <div className="portfolio-media-2">
-                    <video
-                      src={item.src}
-                      controls
-                      preload="metadata"
-                      playsInline
-                      className="landscape-video"
-                    ></video>
-                  </div>
-                  <div className="portfolio-content">
-                    {item.title && <h5>{item.title}</h5>}
-                    <span>{item.category}</span>
-                  </div>
-                </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Testimonial Section */}
-      <section className="testimonial-section" id="testimonialCarousel">
-        <div className="container">
-          {/* Heading */}
-          <div className="text-center mb-5">
-            <span className="section-tag">TESTIMONIAL</span>
-            <h2 className="section-title">Client Feedback</h2>
-          </div>
-          <div className="row justify-content-center g-4">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="col-lg-3">
-                <div className="testimonial-card">
-                  <Image
-                    src={testimonial.image}
-                    className="avatar"
-                    alt={testimonial.name}
-                    width={60}
-                    height={60}
-                  />
-                  <p>{testimonial.text}</p>
-                  <h5>{testimonial.name}</h5>
-                  <span>{testimonial.company}</span>
-                </div>
-              </div>
+      <section className="portfolio-process">
+        <div className="portfolio-wrap">
+          <h2>How We Turn Ideas Into Digital Experiences</h2>
+          <ol>
+            {[
+              "Discover",
+              "Plan",
+              "Design",
+              "Develop",
+              "Optimize",
+              "Launch",
+            ].map((x, i) => (
+              <li key={x}>
+                <b>0{i + 1}</b>
+                <h3>{x}</h3>
+                <p>Build around business goals, audience and requirements.</p>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
-    </>
+      <section className="portfolio-cta">
+        <div className="portfolio-wrap">
+          <h2>Have a Project in Mind?</h2>
+          <p>
+            Whether you need a new website, better search visibility,
+            advertising or creative content, let&apos;s discuss what you&apos;re
+            building.
+          </p>
+          <a href="#enquiry" className="portfolio-primary">
+            Start Your Project <i className="bi bi-arrow-right" />
+          </a>
+        </div>
+      </section>
+      <section id="enquiry" className="portfolio-enquiry">
+        <div className="portfolio-wrap">
+          <ContactForm
+            title="Tell Us About Your Project"
+            subtitle="Share your requirements and let's start a conversation."
+            showCompanyField
+            showCityField
+            showServiceField
+            showMessageField
+            requiredFields={["name", "city"]}
+            emailServiceId="service_8i6vy19"
+            emailTemplateId="template_0wppclq"
+            emailPublicKey="S9FlpPUNmoshtqgjY"
+            buttonText="START A CONVERSATION"
+            whatsappNumber="9353042456"
+          />
+        </div>
+      </section>
+    </main>
   );
 }
-

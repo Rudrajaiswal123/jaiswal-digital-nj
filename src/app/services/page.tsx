@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     canonical: "https://jaiswaldigital.com/services",
     languages: {
     "en-IN": "https://jaiswaldigital.com/services",
-    "en": "https://jaiswaldigital.com/sservices",
+      "en": "https://jaiswaldigital.com/services",
   },
   },
 

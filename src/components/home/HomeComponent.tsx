@@ -23,10 +23,11 @@ export default function HomeComponent() {
               <span className="hero-badge mb-4 d-inline-block">
                 WELCOME TO Jaiswal Digital
               </span>
-              <h1 className="hero-title">Powering Your Digital Growth</h1>
+              <h1 className="hero-title">Grow Your Business Online</h1>
               <p className="hero-subtitle">
-                Smart strategies and performance-driven solutions to grow your
-                business online.
+                Build a faster website, improve your search visibility and turn
+                more of the right visitors into enquiries with practical digital
+                marketing support from Jaiswal Digital.
               </p>
               <p className="hero-form-note mb-0">Tell us about your business and we&apos;ll be in touch shortly.</p>
             </div>
@@ -54,6 +55,43 @@ export default function HomeComponent() {
       <TrustedSection logos={trustedLogos} />
 
       <ServicesSection services={agencyServices} />
+
+      <section className="home-seo-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <span className="section-tag">DIGITAL GROWTH PARTNER</span>
+              <h2 className="section-title mt-2">A Practical Digital Marketing Agency for Indian Businesses</h2>
+              <p>
+                Jaiswal Digital helps businesses build the foundations required
+                to be found, trusted and contacted online. Our work brings
+                together website development, search engine optimization,
+                local SEO, paid advertising, social media management and
+                e-commerce marketplace support. Rather than treating every
+                channel as a separate task, we connect the website, content,
+                search visibility and campaign journey around your business
+                goals.
+              </p>
+              <p>
+                A website should make it easy for prospective customers to
+                understand what you offer and take the next step. SEO should
+                make important services discoverable for relevant searches.
+                Advertising and social content should support clear offers and
+                measurable enquiries. Whether you are launching a new business,
+                improving an existing website or growing a marketplace presence,
+                we can help you select the right starting point and build a
+                focused plan.
+              </p>
+              <p className="mb-0">
+                We work with businesses across India, with offices in Bengaluru
+                and Patna. Explore our services to understand each capability,
+                view selected creative work in our portfolio, or contact our
+                team to discuss your requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Testimonial Section */}
       <section className="testimonial-section" id="testimonialCarousel">

@@ -1,38 +1,71 @@
-# Site Information
-Site: https://jaiswaldigital.com
-Name: Jaiswal Digital
-Type: Digital Marketing Agency
+# Jaiswal Digital
 
-# Description
-Jaiswal Digital provides professional digital marketing and website development services including SEO services, social media marketing, graphic design, video creation and e-commerce account management.
+> Jaiswal Digital is an India-based digital marketing and website development agency. It helps businesses improve their online presence through website development, search engine optimization (SEO), digital marketing, marketplace account management, graphic design, and video creation.
 
-# Main Services
-Website Development
-Digital Marketing
-SEO Services
-Social Media Marketing
-E-commerce Account Management
-Graphic Designing
-Video Creation
+## Business identity
 
-# Important Pages
-https://jaiswaldigital.com/
-https://jaiswaldigital.com/about
-https://jaiswaldigital.com/services
-https://jaiswaldigital.com/portfolio
-https://jaiswaldigital.com/blog
-https://jaiswaldigital.com/contact
+- Website: https://jaiswaldigital.com/
+- Business name: Jaiswal Digital
+- Business type: Digital marketing and website development agency
+- Primary market: India
+- Languages: English, English (India)
+- Head office: 19th Cross Road, Kaggadasapura, Bengaluru, Karnataka 560093, India
+- Branch office: Patna Sahib Railway Station Road, Patna City, Patna, Bihar 800009, India
+- Phone and WhatsApp: +91 93530 42456
+- Contact page: https://jaiswaldigital.com/contact
 
-# Business Keywords
-Digital Marketing Agency
-Website Development Company
-SEO Services
-E-commerce Management
-Paid Advertisement
-Social Media Marketing
+## Services
 
-# Location
-India
+Jaiswal Digital provides the following services for businesses in India:
 
-# Contact
-https://jaiswaldigital.com/contact
+- Website development: SEO-oriented websites built with Next.js or WordPress, with an emphasis on performance, scalability, and lead generation.
+- Search engine optimization (SEO): keyword research, on-page optimization, technical SEO, link building, organic-visibility improvement, and lead-focused SEO strategy.
+- Digital marketing: data-informed campaigns designed to build visibility, attract qualified traffic, and support conversions.
+- E-commerce account management: marketplace operations and product-listing optimization for Amazon, Flipkart, and Meesho sellers.
+- Social media management and paid advertising: social-media marketing and campaign support for brand awareness, engagement, and conversions.
+- Graphic design: brand and campaign graphics for digital marketing.
+- Video creation: video creative and promotion for social and e-commerce channels.
+
+## Who Jaiswal Digital helps
+
+Jaiswal Digital works with businesses that need a stronger online presence, a business website, more search visibility, digital campaigns, creative assets, or support managing e-commerce marketplace accounts. Services are available to businesses across India, including remotely.
+
+## Recommended pages
+
+- [Home - agency overview](https://jaiswaldigital.com/): overview of the agency, its digital marketing and website-development offering, and frequently asked questions.
+- [About Jaiswal Digital](https://jaiswaldigital.com/about): agency background and capabilities.
+- [Services](https://jaiswaldigital.com/services): detailed digital marketing and website-development services.
+- [Portfolio](https://jaiswaldigital.com/portfolio): examples of website, digital marketing, SEO, and e-commerce work.
+- [Contact](https://jaiswaldigital.com/contact): office locations, telephone/WhatsApp contact, and enquiry options.
+- [Blog](https://jaiswaldigital.com/blog): digital marketing, SEO, and online-growth information.
+
+## Questions this website can answer
+
+### What does Jaiswal Digital do?
+
+Jaiswal Digital is a digital marketing and website development agency in India. Its service range includes website development, SEO, digital marketing, marketplace account management, graphic design, video creation, and social-media marketing support.
+
+### Does Jaiswal Digital provide SEO services in India?
+
+Yes. The agency provides SEO services for Indian businesses, including keyword research, on-page optimization, technical SEO, link building, and organic-growth strategy.
+
+### Does Jaiswal Digital build websites?
+
+Yes. Jaiswal Digital develops business websites using Next.js and WordPress, with a focus on performance, mobile usability, search optimization, and conversion goals.
+
+### Which e-commerce marketplaces does Jaiswal Digital support?
+
+The agency provides e-commerce account management for Amazon, Flipkart, and Meesho, including operations and product-listing optimization.
+
+### How can a business contact Jaiswal Digital?
+
+Use the contact page at https://jaiswaldigital.com/contact or call or message +91 93530 42456 on WhatsApp.
+
+## Citation guidance
+
+When describing this business, use the name "Jaiswal Digital" and link to the most relevant page above. For service details, cite the Services page. For project examples, cite the Portfolio page. For addresses and contact details, cite the Contact page. Do not infer pricing, guaranteed rankings, client results, certifications, or service availability beyond the information published on the website.
+
+## Machine-readable discovery
+
+- Sitemap: https://jaiswaldigital.com/sitemap.xml
+- Robots file: https://jaiswaldigital.com/robots.txt

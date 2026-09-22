@@ -1,2 +1,246 @@
-.service-pricing-section{position:relative;overflow:hidden;padding:clamp(5rem,8vw,8rem) 1.5rem;background:radial-gradient(circle at 15% 15%,rgba(106,72,255,.2),transparent 29rem),radial-gradient(circle at 85% 72%,rgba(231,85,202,.14),transparent 31rem),#090614}.service-pricing-container{position:relative;width:min(100%,1300px);margin:auto}.service-pricing-header{max-width:49rem;margin:0 auto 3.75rem;text-align:center}.service-pricing-header>span{color:#ec98ff;font-size:.78rem;font-weight:700;letter-spacing:.12em}.service-pricing-header h2{margin:.8rem 0 1rem;color:#fff;font-size:clamp(2.2rem,4vw,3.8rem);font-weight:800;letter-spacing:-.05em}.service-pricing-header p{margin:0;color:#d4cde1;font-size:1.08rem;line-height:1.7}.pricing-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.3rem}.pricing-service-card{display:flex;min-height:33rem;padding:1.7rem;border:1px solid rgba(203,185,255,.16);border-radius:1.3rem;flex-direction:column;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));box-shadow:inset 0 1px rgba(255,255,255,.06),0 1rem 2.6rem rgba(0,0,0,.2);backdrop-filter:blur(14px);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}.pricing-service-card:hover{border-color:rgba(218,123,255,.57);box-shadow:0 1.5rem 3.4rem rgba(4,0,20,.48),0 0 2rem rgba(177,80,255,.2);transform:translateY(-5px)}.pricing-service-icon{display:grid;width:3rem;height:3rem;margin-bottom:1.25rem;border-radius:.85rem;place-items:center;background:linear-gradient(135deg,rgba(135,83,255,.37),rgba(255,103,203,.23));box-shadow:0 0 .9rem rgba(191,93,255,.21);color:#f2b4ff;font-size:1.3rem}.pricing-service-card h3{margin:0 0 1.15rem;color:#fff;font-size:1.25rem;font-weight:750}.pricing-starting-label{color:#bdb5cf;font-size:.8rem}.pricing-price{margin:.25rem 0 1rem;color:#fff;font-size:2rem;font-weight:800;letter-spacing:-.04em}.pricing-price small{color:#c7bfda;font-size:.82rem;font-weight:600;letter-spacing:0}.pricing-description{min-height:4.8rem;margin:0 0 1rem;color:#d4cde1;font-size:.9rem;line-height:1.6}.pricing-service-card ul{display:grid;gap:.5rem;margin:0;padding:0;list-style:none}.pricing-service-card li{display:flex;gap:.45rem;color:#eeeaf6;font-size:.83rem;line-height:1.3}.pricing-service-card li i{color:#da90ff}.pricing-note{margin:.85rem 0 0;color:#bdb5cf;font-size:.78rem;font-style:italic}.pricing-card-link{display:inline-flex;gap:.4rem;margin-top:auto;padding-top:1.3rem;color:#f4adff;font-size:.9rem;font-weight:750;text-decoration:none}.pricing-card-link:hover,.pricing-card-link:focus-visible{color:#fff;text-decoration:underline;outline:none}.custom-pricing-banner{display:flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:3.5rem;padding:clamp(1.6rem,4vw,3rem);border:1px solid rgba(216,172,255,.22);border-radius:1.4rem;background:linear-gradient(100deg,rgba(99,55,209,.32),rgba(218,73,184,.2));box-shadow:0 1.2rem 3.5rem rgba(0,0,0,.22)}.custom-pricing-banner h3{margin:0 0 .6rem;color:#fff;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:800}.custom-pricing-banner p{max-width:48rem;margin:0 0 .9rem;color:#ddd5ea;line-height:1.6}.custom-pricing-banner small{color:#d6cfe3}.custom-pricing-banner small b{padding:0 .25rem;color:#f29cff}.custom-pricing-button{display:inline-flex;flex:none;align-items:center;gap:.5rem;padding:.9rem 1.35rem;border-radius:999px;background:linear-gradient(100deg,#8953ff,#df59df 55%,#ff76bf);box-shadow:0 .8rem 1.7rem rgba(227,90,217,.3);color:#fff;font-weight:800;text-decoration:none}.custom-pricing-button:hover,.custom-pricing-button:focus-visible{color:#fff;filter:brightness(1.13);outline:2px solid #fff;outline-offset:3px}@media (min-width:768px) and (max-width:1199px){.pricing-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:767px){.service-pricing-section{padding-right:1.25rem;padding-left:1.25rem}.pricing-service-grid{grid-template-columns:1fr}.pricing-service-card{min-height:0}.pricing-description{min-height:0}.custom-pricing-banner{align-items:flex-start;flex-direction:column;gap:1.35rem}}
-
+.service-pricing-section {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(5rem, 8vw, 8rem) 1.5rem;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(106, 72, 255, 0.2),
+      transparent 29rem
+    ),
+    radial-gradient(
+      circle at 85% 72%,
+      rgba(231, 85, 202, 0.14),
+      transparent 31rem
+    ),
+    #090614;
+}
+.service-pricing-container {
+  position: relative;
+  width: min(100%, 1300px);
+  margin: auto;
+}
+.service-pricing-header {
+  max-width: 49rem;
+  margin: 0 auto 3.75rem;
+  text-align: center;
+}
+.service-pricing-header > span {
+  color: #ec98ff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+.service-pricing-header h2 {
+  margin: 0.8rem 0 1rem;
+  color: #fff;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+.service-pricing-header p {
+  margin: 0;
+  color: #d4cde1;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+.pricing-service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.3rem;
+}
+.pricing-service-card {
+  display: flex;
+  min-height: 33rem;
+  padding: 1.7rem;
+  border: 1px solid rgba(203, 185, 255, 0.16);
+  border-radius: 1.3rem;
+  flex-direction: column;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.025)
+  );
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.06),
+    0 1rem 2.6rem rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(14px);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.pricing-service-card:hover {
+  border-color: rgba(218, 123, 255, 0.57);
+  box-shadow:
+    0 1.5rem 3.4rem rgba(4, 0, 20, 0.48),
+    0 0 2rem rgba(177, 80, 255, 0.2);
+  transform: translateY(-5px);
+}
+.pricing-service-icon {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.85rem;
+  place-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(135, 83, 255, 0.37),
+    rgba(255, 103, 203, 0.23)
+  );
+  box-shadow: 0 0 0.9rem rgba(191, 93, 255, 0.21);
+  color: #f2b4ff;
+  font-size: 1.3rem;
+}
+.pricing-service-card h3 {
+  margin: 0 0 1.15rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 750;
+}
+.pricing-starting-label {
+  color: #bdb5cf;
+  font-size: 0.8rem;
+}
+.pricing-price {
+  margin: 0.25rem 0 1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+.pricing-price small {
+  color: #c7bfda;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.pricing-description {
+  min-height: 4.8rem;
+  margin: 0 0 1rem;
+  color: #d4cde1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.pricing-service-card ul {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pricing-service-card li {
+  display: flex;
+  gap: 0.45rem;
+  color: #eeeaf6;
+  font-size: 0.83rem;
+  line-height: 1.3;
+}
+.pricing-service-card li i {
+  color: #da90ff;
+}
+.pricing-note {
+  margin: 0.85rem 0 0;
+  color: #bdb5cf;
+  font-size: 0.78rem;
+  font-style: italic;
+}
+.pricing-card-link {
+  display: inline-flex;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 1.3rem;
+  color: #f4adff;
+  font-size: 0.9rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+.pricing-card-link:hover,
+.pricing-card-link:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+  outline: none;
+}
+.custom-pricing-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  padding: clamp(1.6rem, 4vw, 3rem);
+  border: 1px solid rgba(216, 172, 255, 0.22);
+  border-radius: 1.4rem;
+  background: linear-gradient(
+    100deg,
+    rgba(99, 55, 209, 0.32),
+    rgba(218, 73, 184, 0.2)
+  );
+  box-shadow: 0 1.2rem 3.5rem rgba(0, 0, 0, 0.22);
+}
+.custom-pricing-banner h3 {
+  margin: 0 0 0.6rem;
+  color: #fff;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 800;
+}
+.custom-pricing-banner p {
+  max-width: 48rem;
+  margin: 0 0 0.9rem;
+  color: #ddd5ea;
+  line-height: 1.6;
+}
+.custom-pricing-banner small {
+  color: #d6cfe3;
+}
+.custom-pricing-banner small b {
+  padding: 0 0.25rem;
+  color: #f29cff;
+}
+.custom-pricing-button {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.35rem;
+  border-radius: 999px;
+  background: linear-gradient(100deg, #8953ff, #df59df 55%, #ff76bf);
+  box-shadow: 0 0.8rem 1.7rem rgba(227, 90, 217, 0.3);
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+.custom-pricing-button:hover,
+.custom-pricing-button:focus-visible {
+  color: #fff;
+  filter: brightness(1.13);
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .pricing-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .service-pricing-section {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .pricing-service-grid {
+    grid-template-columns: 1fr;
+  }
+  .pricing-service-card {
+    min-height: 0;
+  }
+  .pricing-description {
+    min-height: 0;
+  }
+  .custom-pricing-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.35rem;
+  }
+}

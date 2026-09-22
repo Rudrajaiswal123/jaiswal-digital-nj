@@ -154,3 +154,25 @@
 
 /* Progress bars use Bootstrap */
 
+.home-seo-section {
+  padding: 6rem 0;
+  background: radial-gradient(circle at 15% 20%, rgba(117, 74, 255, 0.2), transparent 28rem),
+    radial-gradient(circle at 85% 80%, rgba(234, 84, 202, 0.12), transparent 25rem),
+    #100826;
+
+  p {
+    color: #d6cfe1;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-seo-section {
+    padding: 3.5rem 0;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

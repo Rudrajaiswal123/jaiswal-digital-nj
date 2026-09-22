@@ -7,15 +7,15 @@ import { testimonials } from "../home/homeData";
 import "./about.scss";
 
 const services = [
-  "Website Development",
-  "SEO",
-  "Local SEO",
-  "Google Ads",
-  "Meta Ads",
-  "Social Media Management",
-  "Graphic Designing",
-  "Video Editing",
-  "E-commerce Management",
+  ["Website Development", "We plan and build responsive business websites that explain your offer clearly, load well on mobile and make it simple for prospects to enquire."],
+  ["SEO", "We improve the pages customers need to find through keyword research, useful on-page content, technical checks and a sustainable visibility plan."],
+  ["Local SEO", "We help location-based businesses strengthen their Google Business Profile, local service signals and Maps visibility for relevant nearby searches."],
+  ["Google Ads", "We set up and refine search campaigns around high-intent queries, conversion tracking and the actions that matter to your business."],
+  ["Meta Ads", "We create Facebook and Instagram campaigns that match the audience, creative format and lead or awareness objective of each campaign."],
+  ["Social Media Management", "We turn brand priorities into a consistent content plan, with platform-ready creative, captions and performance review."],
+  ["Graphic Designing", "We produce campaign and brand visuals that keep communication clear and recognisable across ads, social posts and marketing materials."],
+  ["Video Editing", "We edit short-form and promotional video content that communicates the product, message and next step quickly."],
+  ["E-commerce Management", "We support Amazon, Flipkart and Meesho sellers with marketplace operations and product-listing improvements."],
 ];
 const icons = [
   "bi-globe",
@@ -41,6 +41,21 @@ const faqs = [
   "Do you manage Google Ads and Meta Ads?|Yes. We manage campaign setup, targeting, optimization and reporting; ad spend remains separate.",
   "Can I hire individual services?|Yes. Services can be selected individually or combined into a tailored solution.",
   "How can I get started?|Share your needs through the consultation form and our team will get in touch.",
+];
+const reasonsToWorkWithUs = [
+  ["Integrated Digital Services", "Website, search, paid campaigns and creative work can be planned together, so each channel supports the same customer journey."],
+  ["Business-Focused Strategy", "We begin with your offer, audience and goals, then select the activities that are appropriate for the stage of your business."],
+  ["Performance & Data", "We use available performance signals to identify what needs attention and where the next improvement can have the most value."],
+  ["Transparent Communication", "You receive clear conversations about scope, priorities, deliverables and next steps throughout the work."],
+  ["Flexible Solutions", "Choose a single specialist service or combine services when a broader website and marketing plan is more useful."],
+  ["Modern Technology", "We use current web tools and practical marketing workflows to create maintainable digital assets for your business."],
+];
+const values = [
+  ["Transparency", "We explain the work, the purpose behind it and the decisions that affect your project."],
+  ["Performance", "We concentrate on useful indicators such as visibility, qualified traffic, enquiries and operational progress."],
+  ["Creativity", "Creative work should make the message easier to understand and more memorable for the intended audience."],
+  ["Innovation", "We evaluate new platforms and formats thoughtfully, using them when they fit the audience and business objective."],
+  ["Long-Term Thinking", "We favour durable website, content and search improvements over short-lived tactics or unsupported promises."],
 ];
 
 export default function AboutComponent() {
@@ -156,14 +171,11 @@ export default function AboutComponent() {
             </p>
           </header>
           <div className="about-services">
-            {services.map((service, index) => (
+            {services.map(([service, description], index) => (
               <article key={service}>
                 <i className={`bi ${icons[index]}`} />
                 <h3>{service}</h3>
-                <p>
-                  Digital services designed around visibility, engagement and
-                  practical business growth.
-                </p>
+                <p>{description}</p>
               </article>
             ))}
           </div>
@@ -200,21 +212,11 @@ export default function AboutComponent() {
             <h2>Why Work With Jaiswal Digital?</h2>
           </header>
           <div className="why-about-grid">
-            {[
-              "Integrated Digital Services",
-              "Business-Focused Strategy",
-              "Performance & Data",
-              "Transparent Communication",
-              "Flexible Solutions",
-              "Modern Technology",
-            ].map((item, index) => (
-              <article key={item}>
+            {reasonsToWorkWithUs.map(([title, description], index) => (
+              <article key={title}>
                 <b>0{index + 1}</b>
-                <h3>{item}</h3>
-                <p>
-                  Practical, transparent digital support shaped around your
-                  business requirements.
-                </p>
+                <h3>{title}</h3>
+                <p>{description}</p>
               </article>
             ))}
           </div>
@@ -226,19 +228,10 @@ export default function AboutComponent() {
             <h2>Driven by Results, Built on Trust</h2>
           </header>
           <div>
-            {[
-              "Transparency",
-              "Performance",
-              "Creativity",
-              "Innovation",
-              "Long-Term Thinking",
-            ].map((item) => (
-              <article key={item}>
-                <h3>{item}</h3>
-                <p>
-                  Clear, practical work that supports sustainable business
-                  growth.
-                </p>
+            {values.map(([title, description]) => (
+              <article key={title}>
+                <h3>{title}</h3>
+                <p>{description}</p>
               </article>
             ))}
           </div>

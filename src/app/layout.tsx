@@ -164,8 +164,8 @@ export default function RootLayout({
               "logo": "https://jaiswaldigital.com/assets/images/jaiswal-digital-logo.webp",
               "description": "Jaiswal Digital is a professional digital marketing and website development company in India helping businesses grow online with SEO, social media marketing and e-commerce solutions.",
               "sameAs": [
-                "https://www.facebook.com/jaiswaldigital",
-                "https://www.instagram.com/jaiswaldigital",
+                "https://www.facebook.com/jaiswaldigital15",
+                "https://www.instagram.com/jaiswaldigitalofficial",
                 "https://www.linkedin.com/company/jaiswaldigital",
                 "https://twitter.com/jaiswaldigital"
               ],

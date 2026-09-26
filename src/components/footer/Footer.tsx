@@ -37,7 +37,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/jaiswaldigitalofficial/"
+                  href="https://www.instagram.com/jaiswaldigitalofficial"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

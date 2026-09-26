@@ -43,6 +43,18 @@
   font-size: 0.94rem;
   line-height: 1.75;
 }
+.footer-address {
+  margin-bottom: 0;
+  font-style: normal;
+}
+.footer-phone {
+  display: inline-block;
+  text-decoration: none;
+}
+.footer-phone:hover,
+.footer-phone:focus-visible {
+  color: #f0a8ff;
+}
 .footer-title {
   margin-bottom: 1.35rem;
   color: #fff;

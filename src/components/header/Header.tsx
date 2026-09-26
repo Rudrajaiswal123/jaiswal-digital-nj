@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from "next/navigation";
 import './header.scss';
 
@@ -46,7 +45,7 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="navbar-brand d-flex align-items-center">
-            <Image
+            <img
               src="/assets/images/jaiswal-digital-logo.webp"
               alt="Jaiswal Digital Logo"
               width={150}

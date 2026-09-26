@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import "./footer.scss";
 
 export default function Footer() {
@@ -15,7 +14,7 @@ export default function Footer() {
           <div className="col-lg-4 col-md-6">
             <div className="footer-brand">
               <div className="d-flex align-items-center mb-3">
-                <Image
+                <img
                   src="/assets/images/jaiswal-digital-logo.webp"
                   alt="Jaiswal Digital"
                   width={240}
@@ -87,17 +86,22 @@ export default function Footer() {
             <h5 className="footer-title">Address</h5>
 
             <h6 className="text-light">Head Office</h6>
-            <p className="footer-text">
+            <address className="footer-text footer-address">
               19th Cross Rd, Kaggadasapura,<br />
               Bengaluru, Karnataka 560093
-            </p>
+            </address>
 
             <h6 className="text-light mt-4">Branch Office</h6>
-            <p className="footer-text">
+            <address className="footer-text footer-address">
               Patna Sahib Railway Station Rd <br />
               Patna City, Patna, <br />
               Bihar 800009
-            </p>
+            </address>
+
+            <h6 className="text-light mt-4">Phone</h6>
+            <a className="footer-text footer-phone" href="tel:+919353042456">
+              +91 93530 42456
+            </a>
           </div>
         </div>
 

@@ -15,10 +15,10 @@ export default function ServicesSection({ services }: ServicesSectionProps) {
       <div className="premium-services-grid">
         {services.map((service) => <article className="premium-service-card" key={service.title}>
           <div className="premium-service-icon" aria-hidden="true">
-            {service.iconImage ? <img src={service.iconImage} alt="" /> : <i className={service.icon} />}
+            {service.iconImage ? <img src={service.iconImage} alt={`${service.title} service icon`} /> : <i className={service.icon} />}
           </div>
           <h3>{service.title}</h3><p>{service.description}</p>
-          <Link href={service.href ?? '/services'} className="premium-service-link" aria-label={`Learn more about ${service.title}`}>Learn More <i className="bi bi-arrow-up-right" aria-hidden="true" /></Link>
+          <Link href={service.href ?? '/services'} className="premium-service-link">Learn more about {service.title} <i className="bi bi-arrow-up-right" aria-hidden="true" /></Link>
         </article>)}
       </div>
       <div className="premium-services-cta"><Link href="/services" className="premium-services-button">Explore Our Services <i className="bi bi-arrow-right" aria-hidden="true" /></Link></div>

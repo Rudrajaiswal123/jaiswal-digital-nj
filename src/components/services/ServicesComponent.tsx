@@ -208,7 +208,7 @@ export default function ServicesComponent() {
           <div className="overview-grid">
             {items.map(([icon, title, text]) => (
               <article key={title}>
-                <Image src={serviceIconImages[title]} alt="" width={48} height={48} className="service-brand-icon" />
+                <Image src={serviceIconImages[title]} alt={`${title} service icon`} width={48} height={48} className="service-brand-icon" />
                 <h3>{title}</h3>
                 <p>{text}</p>
                 <Link href="#consultation">

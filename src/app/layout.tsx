@@ -375,23 +375,12 @@ export default function RootLayout({
           position="top-center"
           toastOptions={{
             duration: 4000,
-            style: {
-              background: '#363636',
-              color: '#fff',
-            },
+            className: 'jaiswal-toast',
             success: {
               duration: 3000,
-              iconTheme: {
-                primary: '#16bdc4',
-                secondary: '#fff',
-              },
             },
             error: {
               duration: 4000,
-              iconTheme: {
-                primary: '#ff6b6b',
-                secondary: '#fff',
-              },
             },
           }}
         />

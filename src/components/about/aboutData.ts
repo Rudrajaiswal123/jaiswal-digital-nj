@@ -12,8 +12,8 @@ export const trustedLogos = [
 
 export const teamMembers = [
   {
-    image: '/assets/images/vikas.webp',
-    name: 'Vikas Gupta',
+    image: '/assets/images/rudra-team.webp',
+    name: 'Rudra Jaiswal',
     role: 'Co-Founder'
   },
   {
@@ -22,9 +22,9 @@ export const teamMembers = [
     role: 'Digital Marketing'
   },
   {
-    image: '/assets/images/rudra-team.webp',
-    name: 'Rudra kumar',
-    role: 'Sales Officer'
+    image: '/assets/images/vikas.webp',
+    name: 'Vikas Gupta',
+    role: 'Website Developer'
   },
   {
     image: '/assets/images/ujjwal-shree.webp',

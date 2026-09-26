@@ -46,6 +46,7 @@ export const trustedLogos = [
   { src: '/assets/images/rakesh-masala-logo.webp', alt: 'Ram Rakesh Masala' },
   { src: '/assets/images/taxfilingca-logo.jpg', alt: 'Tax Filing CA' },
   { src: '/assets/images/mobile-factory.webp', alt: 'Mobile Factory' },
+  { src: '/assets/images/lph-logo.webp', alt: 'Life Plus' },
 ];
 
 export const testimonials = [

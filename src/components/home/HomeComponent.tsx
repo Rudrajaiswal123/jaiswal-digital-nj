@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import "./homeComponent.scss";
 import { trustedLogos, testimonials, skills } from "./homeData";
 import ContactForm from "../contact-form/ContactForm";
@@ -103,7 +104,7 @@ export default function HomeComponent() {
             {testimonials.map((testimonial, index) => (
               <div key={index} className="col-lg-3">
                 <div className="testimonial-card">
-                  <img
+                  <Image
                     src={testimonial.image}
                     className="avatar"
                     alt={testimonial.name}

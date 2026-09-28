@@ -63,7 +63,7 @@ export const testimonials = [
     text: 'Jaiswal Digital ne humare business ke liye ek custom application develop kiya, jisse property details form fill karna pe PDF file download ho jata hai. Ab paper par details likhne ki koi zarurat nahi padti—sab kuch digital ho gaya hai. Is solution ne humara kaam fast, organized aur efficient bana diya.'
   },
   {
-    image: '/assets/images/male-team2.webp',
+    image: '/assets/images/male-team2.png',
     name: 'Abhishek vaish',
     company: 'Gift Corner Owner',
     text: 'Mera offline shop mein sales kaafi kam ho gayi thi aur mujhe online business ka experience nahi tha. Jaiswal Digital ke support se mera Meesho aur Amazon account setup hua aur poora e-commerce business manage kiya gaya. Ab main online products sell kar raha hoon aur sales grow ho rahi hain.'

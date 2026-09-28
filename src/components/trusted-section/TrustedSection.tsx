@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import './trustedSection.scss';
 
 interface TrustedLogos {
@@ -59,7 +60,7 @@ export default function TrustedSection({
           <div className="brand-carousel-viewport" ref={viewportRef} tabIndex={0} aria-label="Client logos. Swipe or use arrow controls to browse.">
             {carouselLogos.map((logo, index) => (
               <div className="brand-logo-card" key={`${logo.src}-${index}`} aria-hidden={index >= logos.length}>
-                <img
+                <Image
                   src={logo.src}
                   alt={logo.alt}
                   width={180}

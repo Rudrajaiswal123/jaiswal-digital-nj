@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import './servicesSection.scss';
 
 export interface Service { icon: string; iconImage?: string; title: string; description: string; href?: string; }
@@ -15,7 +16,14 @@ export default function ServicesSection({ services }: ServicesSectionProps) {
       <div className="premium-services-grid">
         {services.map((service) => <article className="premium-service-card" key={service.title}>
           <div className="premium-service-icon" aria-hidden="true">
-            {service.iconImage ? <img src={service.iconImage} alt={`${service.title} service icon`} /> : <i className={service.icon} />}
+            {service.iconImage ? (
+              <Image
+                src={service.iconImage}
+                alt={`${service.title} service icon`}
+                width={32}
+                height={32}
+              />
+            ) : <i className={service.icon} />}
           </div>
           <h3>{service.title}</h3><p>{service.description}</p>
           <Link href={service.href ?? '/services'} className="premium-service-link">Learn more about {service.title} <i className="bi bi-arrow-up-right" aria-hidden="true" /></Link>

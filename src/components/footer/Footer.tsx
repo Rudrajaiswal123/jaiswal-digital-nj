@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import "./footer.scss";
 
 export default function Footer() {
@@ -14,8 +15,8 @@ export default function Footer() {
           <div className="col-lg-4 col-md-6">
             <div className="footer-brand">
               <div className="d-flex align-items-center mb-3">
-                <img
-                  src="/assets/images/jaiswal-digital-logo.webp"
+                <Image
+                  src="/assets/images/jaiswal-digital-logo.jpg"
                   alt="Jaiswal Digital"
                   width={240}
                   height={80}

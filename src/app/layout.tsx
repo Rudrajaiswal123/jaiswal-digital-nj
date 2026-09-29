@@ -113,10 +113,10 @@ export default function RootLayout({
         <link rel='icon' href='/favicon.ico' />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-YYXRB3TNRF"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -124,11 +124,8 @@ export default function RootLayout({
     gtag('config', 'G-YYXRB3TNRF');
   `}
         </Script>
-        {/* Bootstrap JS Bundle */}
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
-
         {/* Meta Pixel Code - Facebook Pixel */}
-        <Script id="facebook-pixel" strategy="afterInteractive">
+        <Script id="facebook-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

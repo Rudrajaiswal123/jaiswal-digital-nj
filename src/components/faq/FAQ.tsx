@@ -1,10 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { faqs } from '../home/homeData';
 import './faq.scss';
 
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(0);
+
   return (
     <section className="faq-section">
       <div className="container">
@@ -19,11 +21,10 @@ export default function FAQ() {
               <div className="accordion-item" key={index}>
                 <h2 className="accordion-header">
                   <button 
-                    className={`accordion-button ${index === 0 ? '' : 'collapsed'}`}
+                    className={`accordion-button ${openIndex === index ? '' : 'collapsed'}`}
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target={`#faq-collapse-${index}`}
-                    aria-expanded={index === 0 ? 'true' : 'false'}
+                    onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
+                    aria-expanded={openIndex === index}
                     aria-controls={`faq-collapse-${index}`}
                   >
                     {faq.question}
@@ -31,8 +32,7 @@ export default function FAQ() {
                 </h2>
                 <div 
                   id={`faq-collapse-${index}`} 
-                  className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
-                  data-bs-parent="#faqAccordion"
+                  className={`accordion-collapse collapse ${openIndex === index ? 'show' : ''}`}
                 >
                   <div className="accordion-body">
                     <p>{faq.answer}</p>

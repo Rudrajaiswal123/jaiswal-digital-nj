@@ -61,8 +61,6 @@ export default function RootTemplate(props: any) {
       >
         <i className="bi bi-whatsapp" aria-hidden="true" />
       </a>
-      <script src='scripts/wow.min.js'></script>
-      <script>new WOW().init();</script>
     </>
   );
 }

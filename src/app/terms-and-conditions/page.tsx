@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Terms & Condition",
   description:
     "Read the Terms and Condition of Jaiswal Digital.",
+  alternates: {
+    canonical: "https://jaiswaldigital.com/terms-and-conditions/",
+  },
 };
 
 

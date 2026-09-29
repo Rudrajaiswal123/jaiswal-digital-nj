@@ -189,7 +189,7 @@ export default function TermsComponent() {
               <li>
                 <p>
                   By visiting this page on our website:{" "}
-                  <a href="https://jaiswaldigital.com/contact">https://jaiswaldigital.com/contact</a>
+                  <a href="https://jaiswaldigital.com/contact/">https://jaiswaldigital.com/contact/</a>
                 </p>
               </li>
               <li>

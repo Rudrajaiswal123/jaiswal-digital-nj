@@ -154,8 +154,8 @@ export default function CookieComponent() {
             <li>
               <p>
                 By visiting this page on our website:{" "}
-                <Link href="/contact">
-                  https://jaiswaldigital.com/contact
+                <Link href="/contact/">
+                  https://jaiswaldigital.com/contact/
                 </Link>
               </p>
             </li>

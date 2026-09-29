@@ -11,5 +11,8 @@ export const metadata: Metadata = {
   title: "Cookie Policy",
   description:
     "Read the Cookie Policy of Jaiswal Digital to understand how we use cookies.",
+  alternates: {
+    canonical: "https://jaiswaldigital.com/cookie-policy/",
+  },
 };
 

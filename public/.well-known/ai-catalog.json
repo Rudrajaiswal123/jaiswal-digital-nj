@@ -1,0 +1,9 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Jaiswal Digital",
+    "identifier": "did:web:jaiswaldigital.com",
+    "documentationUrl": "https://jaiswaldigital.com/"
+  },
+  "entries": []
+}

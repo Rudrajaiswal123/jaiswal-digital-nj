@@ -82,7 +82,7 @@ export default function PortfolioComponent() {
               <Link href="#enquiry" className="portfolio-primary">
                 Start Your Project <i className="bi bi-arrow-right" />
               </Link>
-              <Link href="/services" className="portfolio-secondary">
+              <Link href="/services/" className="portfolio-secondary">
                 Explore Services
               </Link>
             </div>

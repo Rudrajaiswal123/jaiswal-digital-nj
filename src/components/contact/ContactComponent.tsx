@@ -213,7 +213,7 @@ export default function ContactComponent() {
           <a href="#contact-form" className="contact-primary">
             Send an Enquiry <i className="bi bi-arrow-right" />
           </a>
-          <Link href="/services" className="contact-secondary">
+          <Link href="/services/" className="contact-secondary">
             Explore Our Services
           </Link>
         </div>

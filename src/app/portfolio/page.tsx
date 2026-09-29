@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://jaiswaldigital.com/portfolio",
+    canonical: "https://jaiswaldigital.com/portfolio/",
     languages: {
-    "en-IN": "https://jaiswaldigital.com/portfolio",
-    "en": "https://jaiswaldigital.com/portfolio",
+    "en-IN": "https://jaiswaldigital.com/portfolio/",
+    "en": "https://jaiswaldigital.com/portfolio/",
   },
   },
 
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Our Work & Case Studies | Jaiswal Digital Portfolio",
     description:
       "Discover successful digital marketing campaigns, website development projects and e-commerce growth case studies by Jaiswal Digital.",
-    url: "https://jaiswaldigital.com/portfolio",
+    url: "https://jaiswaldigital.com/portfolio/",
     type: "website",
   },
 

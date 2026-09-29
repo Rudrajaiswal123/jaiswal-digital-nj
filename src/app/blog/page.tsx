@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://jaiswaldigital.com/blog",
+    canonical: "https://jaiswaldigital.com/blog/",
   },
 
   openGraph: {
     title: "Digital Marketing Blog | SEO & Business Growth Strategies",
     description:
       "Explore expert insights on SEO, website development, social media marketing and e-commerce strategies to grow your business online in India.",
-    url: "https://jaiswaldigital.com/blog",
+    url: "https://jaiswaldigital.com/blog/",
     type: "website",
   },
 

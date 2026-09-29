@@ -83,7 +83,7 @@ export default function Header() {
 
               <li className="nav-item">
                 <Link
-                  href="/about"
+                  href="/about/"
                   onClick={handleLinkClick}
                   className={`nav-link ${isActive("/about") ? "active" : ""}`}
                 >
@@ -93,7 +93,7 @@ export default function Header() {
 
               <li className="nav-item">
                 <Link
-                  href="/services"
+                  href="/services/"
                   onClick={handleLinkClick}
                   className={`nav-link ${isActive("/services") ? "active" : ""}`}
                 >
@@ -103,7 +103,7 @@ export default function Header() {
 
               <li className="nav-item">
                 <Link
-                  href="/portfolio"
+                  href="/portfolio/"
                   onClick={handleLinkClick}
                   className={`nav-link ${isActive("/portfolio") ? "active" : ""}`}
                 >
@@ -113,7 +113,7 @@ export default function Header() {
 
               <li className="nav-item">
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   onClick={handleLinkClick}
                   className={`nav-link ${isActive("/contact") ? "active" : ""}`}
                 >

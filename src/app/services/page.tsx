@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://jaiswaldigital.com/services",
+    canonical: "https://jaiswaldigital.com/services/",
     languages: {
-    "en-IN": "https://jaiswaldigital.com/services",
-      "en": "https://jaiswaldigital.com/services",
+    "en-IN": "https://jaiswaldigital.com/services/",
+      "en": "https://jaiswaldigital.com/services/",
   },
   },
 
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Digital Marketing & Website Development Services in India | Jaiswal Digital",
     description:
       "Explore website development, SEO, local SEO, Google Ads, Meta Ads, social media management, graphic design and video editing services.",
-    url: "https://jaiswaldigital.com/services",
+    url: "https://jaiswaldigital.com/services/",
   },
 
   twitter: {

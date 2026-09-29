@@ -33,24 +33,27 @@ export default function Footer() {
                   href="https://www.facebook.com/jaiswaldigital15"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Jaiswal Digital on Facebook"
                 >
-                  <i className="bi bi-facebook"></i>
+                  <i className="bi bi-facebook" aria-hidden="true"></i>
                 </a>
 
                 <a
                   href="https://www.instagram.com/jaiswaldigitalofficial"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Jaiswal Digital on Instagram"
                 >
-                  <i className="bi bi-instagram"></i>
+                  <i className="bi bi-instagram" aria-hidden="true"></i>
                 </a>
 
                 <a
                   href="https://www.youtube.com/@JaiswalDigital15"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Jaiswal Digital on YouTube"
                 >
-                  <i className="bi bi-youtube"></i>
+                  <i className="bi bi-youtube" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -75,10 +78,10 @@ export default function Footer() {
             <h5 className="footer-title">Useful Links</h5>
             <ul className="footer-links">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/services">Services</Link></li>
-              <li><Link href="/portfolio">Portfolio</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/about/">About</Link></li>
+              <li><Link href="/services/">Services</Link></li>
+              <li><Link href="/portfolio/">Portfolio</Link></li>
+              <li><Link href="/contact/">Contact</Link></li>
             </ul>
           </div>
 
@@ -113,9 +116,9 @@ export default function Footer() {
           </p>
 
           <div className="footer-policy">
-            <Link href="/terms-and-conditions">Terms & Conditions</Link>
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/cookie-policy">Cookie Policy</Link>
+            <Link href="/terms-and-conditions/">Terms & Conditions</Link>
+            <Link href="/privacy-policy/">Privacy Policy</Link>
+            <Link href="/cookie-policy/">Cookie Policy</Link>
           </div>
         </div>
       </div>

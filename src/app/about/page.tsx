@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://jaiswaldigital.com/about",
+    canonical: "https://jaiswaldigital.com/about/",
     languages: {
-    "en-IN": "https://jaiswaldigital.com/about",
-    "en": "https://jaiswaldigital.com/about",
+    "en-IN": "https://jaiswaldigital.com/about/",
+    "en": "https://jaiswaldigital.com/about/",
   },
   },
 
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "About Jaiswal Digital | Digital Marketing & Website Development Agency",
     description:
       "Learn how Jaiswal Digital helps businesses build their online presence through website development, SEO, advertising, social media and creative services.",
-    url: "https://jaiswaldigital.com/about",
+    url: "https://jaiswaldigital.com/about/",
   },
 
   twitter: {

@@ -30,7 +30,7 @@ export default function HeroSlider() {
                 <div className="col-lg-6">
                   <h1 className="heroTitle">{item.title}</h1>
                   <p className="heroDesc">{item.desc}</p>
-                  <a href="/contact" className="heroBtn">
+                  <a href="/contact/" className="heroBtn">
                     CONTACT US
                   </a>
                 </div>

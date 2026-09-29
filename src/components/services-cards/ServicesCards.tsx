@@ -15,7 +15,7 @@ interface ServicesCardsProps {
   link?: string;
 }
 
-export default function ServicesCards({ services, link = '/contact' }: ServicesCardsProps) {
+export default function ServicesCards({ services, link = '/contact/' }: ServicesCardsProps) {
   return (
     <section className="services-cards-section">
       <div className="container">

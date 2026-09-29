@@ -41,7 +41,7 @@ export default function BlogComponent() {
                 <p className="small text-uppercase fw-semibold">Digital growth guide</p>
                 <h2 className="h4">{article.title}</h2>
                 <p>{article.description}</p>
-                <Link href="/contact" className="text-decoration-none fw-semibold">
+                <Link href="/contact/" className="text-decoration-none fw-semibold">
                   Discuss this with our team <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
@@ -59,8 +59,8 @@ export default function BlogComponent() {
               priorities across website development, SEO, local SEO, paid ads,
               social media and e-commerce support.
             </p>
-            <Link href="/services" className="btn btn-dark me-2">Explore services</Link>
-            <Link href="/contact" className="btn btn-outline-dark">Contact Jaiswal Digital</Link>
+            <Link href="/services/" className="btn btn-dark me-2">Explore services</Link>
+            <Link href="/contact/" className="btn btn-outline-dark">Contact Jaiswal Digital</Link>
           </div>
         </section>
       </div>

@@ -24,10 +24,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://jaiswaldigital.com/contact",
+    canonical: "https://jaiswaldigital.com/contact/",
     languages: {
-    "en-IN": "https://jaiswaldigital.com/contact",
-    "en": "https://jaiswaldigital.com/contact",
+    "en-IN": "https://jaiswaldigital.com/contact/",
+    "en": "https://jaiswaldigital.com/contact/",
   },
   },
 
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Contact Jaiswal Digital | Let’s Grow Your Business Online",
     description:
       "Need expert digital marketing or website development services? Contact Jaiswal Digital today.",
-    url: "https://jaiswaldigital.com/contact",
+    url: "https://jaiswaldigital.com/contact/",
   },
 
   twitter: {

@@ -74,10 +74,10 @@ export default function AboutComponent() {
                 growth.
               </p>
               <div className="about-actions">
-                <Link href="/services" className="about-primary">
+                <Link href="/services/" className="about-primary">
                   Explore Our Services <i className="bi bi-arrow-right" />
                 </Link>
-                <Link href="/portfolio" className="about-secondary">
+                <Link href="/portfolio/" className="about-secondary">
                   View Our Work
                 </Link>
               </div>
@@ -180,7 +180,7 @@ export default function AboutComponent() {
             ))}
           </div>
           <div className="center">
-            <Link className="about-primary" href="/services">
+            <Link className="about-primary" href="/services/">
               Explore All Services <i className="bi bi-arrow-right" />
             </Link>
           </div>
@@ -382,7 +382,7 @@ export default function AboutComponent() {
             <Link href="#about-contact" className="about-primary">
               Start a Conversation <i className="bi bi-arrow-right" />
             </Link>
-            <Link href="/services" className="about-secondary">
+            <Link href="/services/" className="about-secondary">
               Explore Services
             </Link>
           </div>

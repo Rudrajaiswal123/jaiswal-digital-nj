@@ -11,5 +11,8 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Read the Privacy Policy of Jaiswal Digital to understand how we collect, use and protect your data.",
+  alternates: {
+    canonical: "https://jaiswaldigital.com/privacy-policy/",
+  },
 };
 

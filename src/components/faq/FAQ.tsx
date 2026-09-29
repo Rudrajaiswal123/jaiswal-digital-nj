@@ -19,7 +19,7 @@ export default function FAQ() {
           <div className="accordion" id="faqAccordion">
             {faqs.map((faq, index) => (
               <div className="accordion-item" key={index}>
-                <h2 className="accordion-header">
+                <h3 className="accordion-header">
                   <button 
                     className={`accordion-button ${openIndex === index ? '' : 'collapsed'}`}
                     type="button"
@@ -29,7 +29,7 @@ export default function FAQ() {
                   >
                     {faq.question}
                   </button>
-                </h2>
+                </h3>
                 <div 
                   id={`faq-collapse-${index}`} 
                   className={`accordion-collapse collapse ${openIndex === index ? 'show' : ''}`}

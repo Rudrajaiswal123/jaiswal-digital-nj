@@ -23,11 +23,11 @@ export default function HomeComponent() {
               <span className="hero-badge mb-4 d-inline-block">
                 WELCOME TO Jaiswal Digital
               </span>
-              <h1 className="hero-title">Grow Your Business Online</h1>
+              <h1 className="hero-title">Digital Marketing Company in India</h1>
               <p className="hero-subtitle">
-                Build a faster website, improve your search visibility and turn
-                more of the right visitors into enquiries with practical digital
-                marketing support from Jaiswal Digital.
+                Jaiswal Digital helps businesses grow online with website
+                development, SEO services, paid advertising and practical
+                digital marketing support.
               </p>
               <p className="hero-form-note mb-0">Tell us about your business and we&apos;ll be in touch shortly.</p>
             </div>
@@ -61,11 +61,12 @@ export default function HomeComponent() {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <span className="section-tag">DIGITAL GROWTH PARTNER</span>
-              <h2 className="section-title mt-2">A Practical Digital Marketing Agency for Indian Businesses</h2>
+              <h2 className="section-title mt-2">Website Development and SEO Services in India</h2>
               <p>
-                Jaiswal Digital helps businesses build the foundations required
-                to be found, trusted and contacted online. Our work brings
-                together website development, search engine optimization,
+                As a digital marketing company in India, Jaiswal Digital helps
+                businesses build the foundations required to be found, trusted
+                and contacted online. Our work brings together website
+                development, search engine optimization,
                 local SEO, paid advertising, social media management and
                 e-commerce marketplace support. Rather than treating every
                 channel as a separate task, we connect the website, content,
@@ -112,7 +113,7 @@ export default function HomeComponent() {
                     height={60}
                   />
                   <p>{testimonial.text}</p>
-                  <h5>{testimonial.name}</h5>
+                  <h3>{testimonial.name}</h3>
                   <span>{testimonial.company}</span>
                 </div>
               </div>

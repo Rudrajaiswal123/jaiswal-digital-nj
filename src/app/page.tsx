@@ -11,10 +11,10 @@ export default function Home() {
 
 export const metadata: Metadata = {
   title:
-    "Digital Marketing & Website Development Company in India",
+    "Digital Marketing Company in India | Website Development & SEO",
 
   description:
-    "Jaiswal Digital provides website development, SEO, local SEO, paid advertising and e-commerce marketplace support for businesses across India.",
+    "Jaiswal Digital is a digital marketing company in India providing website development, SEO, local SEO, paid advertising and e-commerce marketplace support for growing businesses.",
 
   keywords: [
     "Digital Marketing Agency in India",
@@ -36,16 +36,16 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Digital Marketing & Website Development Services in India",
+      "Digital Marketing Company in India | Website Development & SEO",
     description:
-      "Grow your business across India with expert SEO, website development, e-commerce management and performance marketing services from Jaiswal Digital.",
+      "Grow your business with a digital marketing company in India offering website development, SEO, e-commerce management and performance marketing services.",
     url: "https://jaiswaldigital.com/",
   },
 
   twitter: {
     title:
-      "Digital Marketing & Website Development Company in India",
+      "Digital Marketing Company in India | Website Development & SEO",
     description:
-      "Professional SEO, social media marketing and e-commerce solutions across India by Jaiswal Digital.",
+      "Website development, SEO, social media marketing and e-commerce solutions from a digital marketing company in India.",
   },
 };
